@@ -11,7 +11,7 @@
 
 body {
 	background: url('../pictures/main_top_bg.jpg') top center no-repeat #0c1011;
-
+	background-size: cover;
 }
 
 h1{
@@ -22,9 +22,10 @@ h1{
 /* video */
 .video_head{
 	width: 100%;
-	height: 1100px;
+	height: 100vh;
 	background: #000;
 	position: absolute;
+	/* position: relative; */
 	z-index: -10;
 	overflow: hidden;
 }
@@ -32,6 +33,60 @@ h1{
 .video_head > .bgvideo{
 	width: 1920px;
 	margin-left: calc( (100% - 1920px) / 2 );
+	object-fit: cover;
+	/* width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0; */
+}
+
+/* Оптимизация для планшетов (от 768px до 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .wrapper {
+        max-width: 90%;
+    }
+    .main_menu li a {
+        font-size: 16px;
+    }
+}
+
+/* Оптимизация для телефонов (меньше 768px) */
+@media (max-width: 767px) {
+    .wrapper {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .main_menu {
+        flex-direction: column; /* Меню в столбик на мобильных устройствах */
+        align-items: flex-start;
+    }
+    .main_menu li {
+        width: 100%;
+    }
+    .main_menu li a {
+        justify-content: flex-start;
+        padding: 10px 0;
+    }
+    .main_menu li a i {
+        margin-right: 10px;
+    }
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+    .social {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .social div {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        margin-left: 10px;
+    }
 }
 
 .site_container {max-width: 1920px;width: 100%;margin-left: auto;margin-right: auto;
