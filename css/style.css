@@ -1,75 +1,108 @@
-html, body, header, nav, section, aside, article,
-footer, div, span, applet, object, iframe, p, 
-blockquote, pre, a, abbr, acronym, address, big, 
-cite, code, del, dfn, img, ins, kbd, q, s, samp, 
-small, strike, sub, sup, tt, var, dl, dt, dd, ol, 
-ul, li, fieldset, form, label, legend, table, 
-caption, tbody, tfoot, thead, tr, th, td, h1, h2, 
-h3, h4, h5, h6 {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
+html, body, header, nav, section, aside, article, footer, div,
+span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, small,
+strike, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form,
+label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
 }
 
 *, *:after, *:before {
     box-sizing: border-box;
 }
-  
+
+a, span, p {
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
+input, button, select, textarea {
+    outline: none;
+    border: none;
+}
+
+select, button {
+    cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* надо попробывать найти этот элемент */
+#detach-button-host {
+    display: none;
+}
+
+:root {
+    --primary-font: "Angelus Medieval";
+    --secondary-font: "Intro";
+    --secondary-light-font: "Intro Book";
+    --brand-color: #eac485;
+}
+
 body {
     font-family: var(--secondary-font);
     color: #ffffff;
     font-size: 18px;
     line-height: 28px;
     font-weight: normal;
-    background: url("../images/bg/header.png") top center no-repeat, url("../images/bg/footer_bg.jpg") deepskyblue bottom center no-repeat;
+    background: url("../img/bg.jpg") top center no-repeat, url("../images/bg/footer_bg.jpg") deepskyblue bottom center no-repeat;
     background-size: 100% auto, 100% auto;
-    /* #1e2a44 */
 }
 
-  
-@media (max-width: 2600px) { 
-    body { background-size: 2600px auto, 2600px auto; } 
+@media (max-width: 2600px) {
+    body {
+      background-size: 2600px auto, 2600px auto;
+    }
+  }
+  @media (max-width: 1680px) {
+    body {
+      background-size: 2400px auto, 2600px auto;
+    }
+  }
+  @media (max-width: 1460px) {
+    body {
+      background-size: 2200px auto, 2600px auto;
+    }
+  }
+  @media (max-width: 1240px) {
+    body {
+      background-size: 2000px auto, 2600px auto;
+    }
+  }
+  @media (max-width: 1024px) {
+    body {
+      background-size: 1400px auto, 2600px auto;
+    }
+  }
+  @media (max-width: 640px) {
+    body {
+      background-size: 1000px auto, 2600px auto;
+      background-position: 50% 60px;
+    }
+  }
+  @media (max-width: 480px) {
+    body {
+      background-size: 760px auto, 2600px auto;
+      background-position: 50% 0;
+    }
 }
-@media (max-width: 1680px) {
-     body { background-size: 2400px auto, 2600px auto; } 
-    }
-@media (max-width: 1460px) {
-     body { background-size: 2200px auto, 2600px auto; } 
-    }
-@media (max-width: 1240px) {
-     body { background-size: 2000px auto, 2600px auto; } 
-    }
-@media (max-width: 1024px) {
-     body { background-size: 1400px auto, 2600px auto; } 
-    }
-@media (max-width: 640px) {
-     body { background-size: 1000px auto, 2600px auto; } 
-    }
-@media (max-width: 480px) {
-     body { background-size: 760px auto, 2600px auto; }
-     .header__video{
-        display: none;
-     }
-    }
 
 .wrapper {
     width: 100%;
     position: relative;
     z-index: 1;
 }
-
-.decor-title__content h1 {
-    font-family: var(--primary-font);
-    font-weight: 400;
-    font-size: 42px;
-    line-height: 1em;
-    color: var(--brand-color);
-    text-transform: uppercase;
-  }
-
 .header__video {
     width: 100%;
     height: auto;
-  }
-  
+}
