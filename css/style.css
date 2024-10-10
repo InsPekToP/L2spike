@@ -1,108 +1,79 @@
-html, body, header, nav, section, aside, article, footer, div,
-span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym,
-address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, small,
-strike, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form,
-label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
+body{
+    margin: 0;
+    font-family: Tahoma,sans-serif;
 }
 
-*, *:after, *:before {
-    box-sizing: border-box;
-}
-
-a, span, p {
-    font-family: inherit;
-    font-weight: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    color: inherit;
-    text-decoration: none;
-}
-
-input, button, select, textarea {
-    outline: none;
-    border: none;
-}
-
-select, button {
-    cursor: pointer;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-/* надо попробывать найти этот элемент */
-#detach-button-host {
-    display: none;
-}
-
-:root {
-    --primary-font: "Angelus Medieval";
-    --secondary-font: "Intro";
-    --secondary-light-font: "Intro Book";
-    --brand-color: #eac485;
-}
-
-body {
-    font-family: var(--secondary-font);
-    color: #ffffff;
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: normal;
-    background: url("../img/bg.jpg") top center no-repeat, url("../images/bg/footer_bg.jpg") deepskyblue bottom center no-repeat;
-    background-size: 100% auto, 100% auto;
-}
-
-@media (max-width: 2600px) {
-    body {
-      background-size: 2600px auto, 2600px auto;
-    }
-  }
-  @media (max-width: 1680px) {
-    body {
-      background-size: 2400px auto, 2600px auto;
-    }
-  }
-  @media (max-width: 1460px) {
-    body {
-      background-size: 2200px auto, 2600px auto;
-    }
-  }
-  @media (max-width: 1240px) {
-    body {
-      background-size: 2000px auto, 2600px auto;
-    }
-  }
-  @media (max-width: 1024px) {
-    body {
-      background-size: 1400px auto, 2600px auto;
-    }
-  }
-  @media (max-width: 640px) {
-    body {
-      background-size: 1000px auto, 2600px auto;
-      background-position: 50% 60px;
-    }
-  }
-  @media (max-width: 480px) {
-    body {
-      background-size: 760px auto, 2600px auto;
-      background-position: 50% 0;
-    }
-}
-
-.wrapper {
-    width: 100%;
+.intro{
+    max-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
     position: relative;
-    z-index: 1;
+    background: url("../img/bg.jpg") center no-repeat;
+    background-size: cover;
 }
-.header__video {
+
+.intro::after{
+    content: "";
+    display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top:0;
+    z-index: 2;
+}
+
+.intro__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 3;
+}
+
+.intro__title{
+    margin: 0;
+    font-size: 45px;
+    color:#fff;
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video__media{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центрируем видео */
+    width: 100vw; /* Растягиваем по ширине */
+    height: 100vh; /* Растягиваем по высоте */
+    object-fit: cover; /* Масштабирование, чтобы видео полностью занимало блок */
+}
+
+@media (max-width: 768px) {
+    .video__media {
+        width: 100vw; /* Растягиваем на всю ширину экрана */
+        height: 100vh; /* Растягиваем на всю высоту экрана */
+        object-fit: cover; /* Масштабируем видео, чтобы оно полностью занимало экран */
+    }
+
+    .intro__title {
+        font-size: 35px; /* Уменьшаем размер текста для мобильных устройств */
+    }
 }
