@@ -90,7 +90,39 @@ html{
     font-size: calc(var(--index)*1.5);
 }
 
+.burger{
+    display: flex;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 3vw;
+    height: 4vh;
+}
 
+.burger span{
+    height: 0.5vh;
+    width: 80%;
+    transform: scale(1);
+    background-color: #faf6f2;
+}
+
+.burger::before,.burger::after{
+    content: "";
+    position: absolute;
+    height: 0.5vh;
+    width: 100%;
+    background-color: #faf6f2;
+    transition: all 0.3 ease 0s;
+}
+
+.burger::after{
+    top: 0;
+}
+
+.burger::before{
+    bottom: 0;
+}
 
 
 /* затемнение видео-фона */
