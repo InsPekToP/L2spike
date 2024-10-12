@@ -53,6 +53,10 @@ html{
     object-fit: cover; /* Масштабирование, чтобы видео полностью занимало блок */
 }
 
+.open{
+    display: flex !important;
+}
+
 .header {
     position: absolute;
     display: flex;
@@ -91,13 +95,13 @@ html{
 }
 
 .burger{
-    display: flex;
+    display: none;
     position: relative;
     z-index: 50;
     align-items: center;
     justify-content: flex-end;
     width: 3vw;
-    height: 4vh;
+    height: 3vh;
 }
 
 .burger span{
@@ -123,6 +127,26 @@ html{
 .burger::before{
     bottom: 0;
 }
+
+/* Добавляем класс active для анимации иконки бургера */
+.burger.active span{
+    transform: scale(0);
+}
+
+.burger.active span::before{
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active span::after{
+    bottom: 50%;
+    transform: rotate(45deg) translate(0,50%);
+}
+
+
+
+
+
 
 
 /* затемнение видео-фона */
