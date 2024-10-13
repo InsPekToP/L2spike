@@ -17,7 +17,7 @@
 
 /* sm <= Medium (md) */
 @media (max-width : 768px) {
-	.burger{
+	/* .burger{
 		display: flex;
 		width: 7vh;
 		height: 5vh;
@@ -35,14 +35,14 @@
 		overflow-y: auto;
 		padding: 15vh 10vw;
 		background-color: rgba(0,0,0,0.5);
-		/* animation: burgerAnimation 0.4s; */
+		animation: burgerAnimation 0.4s;
 	}
 
 	.nav ul{
 		flex-direction: column;
 		row-gap: 30px;
 		font-size:calc(var(--index)*3);
-	}
+	} */
 }
 
 /* xs <= Small (sm) */
