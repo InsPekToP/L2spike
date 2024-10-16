@@ -66,6 +66,40 @@ a{
     padding: 20px;
 }
 
+.wrap-logo {
+  display: flex;
+  align-items: center;
+ 
+}
+
+header a {
+  color: #fff;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  border-radius: 4px;
+}
+
+header a.logo {
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--main-clr);
+}
+
+header a:hover {
+  background-color: rgba(79,209,197,1);
+  color: #212121;
+}
+
+header a.active {
+  background-color: rgba(79,209,197,1);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  }
+
 /* Кнопка */
 .wrap__btn{
     position: absolute;
@@ -88,7 +122,7 @@ a{
     font-weight: 700;
     color: #313133;
     background: #4FD1C5;
-    background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+    background: linear-gradient(90deg, rgba(129,230,217,0,5) 0%, rgba(79,209,197,1) 100%);
     border: none;
     border-radius: 1000px;
     box-shadow: 12px 12px 24px rgba(79,209,197,.64);
