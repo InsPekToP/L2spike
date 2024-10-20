@@ -34,16 +34,18 @@ a{
 }
 
 /* Видео на фоне */
-.background-container {
+.background-container,
+.background-container-news {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
     background: url("../img/bg.jpg") center no-repeat;
     background-size: cover;
   }
 
-.background-video {
+.background-video,
+.background-video-news {
     position: absolute;
     top: 0;
     left: 0;
