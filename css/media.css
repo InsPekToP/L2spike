@@ -21,6 +21,27 @@
 	.background-video-news{
 		object-position: 80%;
 	}
+
+	.wrap__btns {
+        flex-direction: column; /* Кнопки будут располагаться друг под другом */
+        justify-content: flex-end;
+		align-items: center;
+        padding: 0 0 20px 0; /* Отступ снизу для кнопок */
+		height: 100vh; /* Устанавливаем высоту 100% окна */
+		box-sizing: border-box;
+    }
+
+    .wrap__btn {
+        margin-bottom: 20px; /* Отступ между кнопками */
+    }
+
+    .wrap__btn:last-child {
+        margin-bottom: 0; /* Убираем нижний отступ для последней кнопки */
+    }
+
+    .button {
+        min-width: 250px; /* Можно уменьшить размер кнопок на мобильных устройствах */
+    }
 }
 
 /* xs <= Small (sm) */

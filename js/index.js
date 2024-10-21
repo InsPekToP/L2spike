@@ -4,6 +4,7 @@ const navLinks = document.querySelectorAll('.nav a');
 // Получаем лого
 const logo = document.querySelector('.logo');
 
+
 // Добавляем обработчик событий на каждую ссылку
 navLinks.forEach(link => {
     link.addEventListener('click', function() {
