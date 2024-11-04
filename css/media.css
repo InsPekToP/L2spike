@@ -25,6 +25,10 @@
 
 /* xs <= Small (sm) */
 @media (max-width : 576px) {
+	.wrap-logo,
+	.nav{
+		display: none;
+	}
 
 }
 
@@ -38,7 +42,9 @@
 
 /* Small (sm) */
 @media (min-width : 576px) {
-
+	.navbar{
+		display: none;
+	}
 	
 }
 
