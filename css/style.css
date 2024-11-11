@@ -10,7 +10,7 @@
 }
 
 html{
-    font-size: 62.5%;
+    /* font-size: 62.5%; */
     /* overflow-x: hidden; */
     scroll-behavior: smooth;
     height: 100%;
@@ -93,7 +93,8 @@ a{
 }
 
 /* Шапка */
-.header{
+
+/* .header{
     position: fixed;
     top: 0;
     width: 100%;
@@ -136,7 +137,7 @@ header nav a.active {
 nav {
   display: flex;
   align-items: center;
-  }
+  } */
 
 /* Кнопка */
 .wrap__btn{

@@ -37,11 +37,9 @@
 		flex-flow: column;
 		text-align: center;
 		z-index: 4;
+		left:-120%;
+		transition: left 0.5s ease;
 	}
-
-	header{
-        left:-120%;
-    }
 
 	header.active{
         left:0%;
