@@ -28,8 +28,9 @@
 		left: 0;
 		height: 100%;
 		width: 100%;
+		font-size: calc(var(--index)*3);
 		/* можно убать прозрачность */
-		background: rgba(0, 0, 0, 0.5);
+		background:rgba(0, 0, 0, 0.5);
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -38,6 +39,34 @@
 		z-index: 4;
 	}
 
+	header .user .user_photo {
+		width: 15rem;
+		height: 15rem;
+		border-radius: 50%;
+		object-fit: cover;
+		margin-bottom: 1rem;
+		margin-top: 0;
+		border: 0.7rem solid var(--main-clr);
+		/* box-shadow: var(--glowing-bxs); */
+	}
+
+	header .navbar{width: 100%;}
+
+	header .navbar ul{
+		list-style: none;
+		padding: 1rem 3rem;
+	}
+
+	header .navbar ul li a{
+		display: block;
+		padding: 0.5rem;
+		text-decoration: none;
+		margin: 1rem 0rem;
+		background:#333;
+		color: #fff;
+		font-size: calc(var(--index)*3);
+		border-radius: 1rem;
+	}
 }
 
 
@@ -58,11 +87,51 @@
 		/* можно убать прозрачность */
 		background: rgba(0, 0, 0, 0.5);
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
 		flex-flow: row;
 		text-align: center;
 		z-index: 4;
+	}
+
+	header .user .user_photo {
+		width: 5rem;
+		height: 5rem;
+		border-radius: 50%;
+		object-fit: cover;
+		margin-bottom: 0rem;
+		margin-top: 0;
+		margin-left: 1rem;
+		border: 0.3rem solid var(--main-clr);
+		/* box-shadow: var(--glowing-bxs); */
+	}
+
+	header .navbar{
+		width: 75%;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	header .navbar ul{
+		list-style: none;
+		padding: 1rem 1rem;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	header .navbar ul li a{
+		display: block;
+		padding: 0.5rem;
+		text-decoration: none;
+		margin: 1rem 2rem;
+		/* background:#333; */
+		color: #fff;
+		font-size: calc(var(--index)*1);
+		border-radius: 1rem;
+	}
+
+	.social-media{
+		margin-right: 2rem;
 	}
 }
 
