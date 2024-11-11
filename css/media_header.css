@@ -39,6 +39,16 @@
 		z-index: 4;
 	}
 
+	header{
+        left:-120%;
+    }
+
+	header.active{
+        left:0%;
+    }
+
+	
+
 	header .user .user_photo {
 		width: 15rem;
 		height: 15rem;
@@ -67,6 +77,49 @@
 		font-size: calc(var(--index)*3);
 		border-radius: 1rem;
 	}
+
+	header .navbar ul li a:hover{
+		scale: 1.1;
+	}
+
+	#menu{
+		position: fixed;
+		top:2rem;
+		right: 2rem;
+		background: #333;
+		color: #fff;
+		cursor: pointer;
+		font-size: calc(var(--index));
+		padding: 1rem 1.5rem;
+		z-index: 4;
+		border-radius: 0.5rem;
+		/* скрываем кнопку */
+		display: block;
+	}
+
+	.social-media{
+		text-align: center;
+		padding: 0rem 0rem 0rem;
+	}
+
+	.social-media a{
+		margin: 0rem .1rem;
+		width: 3.5rem;
+		height: 3.5rem;
+		line-height: 3.5rem;
+		background-color: #fff;
+		text-decoration: none;
+		border-radius: 50%;
+		color: #000;
+		font-size: calc(var(--index)*2);
+	}
+
+	.social-media a:hover{
+		background-color: var(--main-clr);
+		color: #fff;
+		/* box-shadow: var(--glowing-bxs); */
+	}
+
 }
 
 
@@ -104,6 +157,11 @@
 		margin-left: 1rem;
 		border: 0.3rem solid var(--main-clr);
 		/* box-shadow: var(--glowing-bxs); */
+		transition: transform 0.3s ease;
+	}
+
+	header .user .user_photo:hover{
+		transform: scale(1.1);
 	}
 
 	header .navbar{
@@ -114,7 +172,7 @@
 
 	header .navbar ul{
 		list-style: none;
-		padding: 1rem 1rem;
+		padding: 0rem 0rem;
 		display: flex;
 		justify-content: space-between;
 	}
@@ -126,13 +184,61 @@
 		margin: 1rem 2rem;
 		/* background:#333; */
 		color: #fff;
-		font-size: calc(var(--index)*1);
+		font-size: calc(var(--index)*1.5);
 		border-radius: 1rem;
+		transition: transform 0.3s ease;
+	}
+
+	header .navbar ul li a:hover{
+		transform: scale(1.1);
+	}
+
+
+	#menu{
+		position: fixed;
+		top:2rem;
+		right: 2rem;
+		background: #333;
+		color: #fff;
+		cursor: pointer;
+		font-size: calc(var(--index)*1);
+		padding: 1rem 1.5rem;
+		z-index: 1000;
+		border-radius: 0.5rem;
+		/* скрываем кнопку */
+		display: none;
 	}
 
 	.social-media{
-		margin-right: 2rem;
+		text-align: center;
+		padding: 0rem 0rem 0rem;
+		margin-right: calc(var(--index));
+		display: flex; /* включаем Flexbox */
+		justify-content: center; /* центрируем кнопки */
+		gap: 0.1rem; /* добавляем расстояние между кнопками */
+		flex-wrap: nowrap; /* предотвращаем перенос элементов */
 	}
+
+	.social-media a{
+		margin: 0;
+		width: 3rem;
+		height: 3rem;
+		line-height: 3rem;
+		background-color: #fff;
+		text-decoration: none;
+		border-radius: 50%;
+		color: #000;
+		font-size: calc(var(--index));
+		transition: transform 0.3s ease;
+	}
+
+	.social-media a:hover{
+		background-color: var(--main-clr);
+		color: #fff;
+		transform: scale(1.1);
+		/* box-shadow: var(--glowing-bxs); */
+	}
+
 }
 
 /* Medium (md) */
