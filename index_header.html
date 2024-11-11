@@ -6,9 +6,46 @@
     <title>Header</title>
     <link rel="stylesheet" href="css/style_header.css">
     <link rel="stylesheet" href="css/media_header.css">
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 </head>
 <body>
-    
+<!-- heder section start -->
+    <header>
+
+        <!-- <div class="user">
+            <div class="language-switcher">
+                <button onclick="changeLanguage('en')">
+                    <img src="img/lang/gb.webp" alt="English" width="30" height="20">
+                </button>
+                <button onclick="changeLanguage('ru')">
+                        <img src="img/lang/ru.webp" alt="Русский" width="30" height="20">
+                </button>
+                <button onclick="changeLanguage('pl')">
+                    <img src="img/lang/pl.webp" alt="Polski" width="30" height="20">
+                </button>
+            </div> -->
+        <div class="user">          
+            <img src="img/user.jpg" class="user_photo" alt="user_photo">
+        </div>
+        
+
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="active" href="#home">Главная</a></li>
+                <li><a href="#about">Новости</a></li>
+                <li><a href="#education">О сервере</a></li>
+            </ul>                
+        </nav>
+
+        <div class="social-media">
+            <a href="https://t.me/l2spike" target="_blank" class="fab fa-telegram"></a>
+            <a href="https://discord.gg/ADQqXMF" target="_blank" class="fab fa-discord"></a>
+        </div>
+    </header>
+    <div id="menu" class="fas fa-bars"></div>
+<!-- heder section end -->
 
 
     <script src="js/index_header.js"></script>

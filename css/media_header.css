@@ -17,17 +17,25 @@
 
 /* sm <= Medium (md) */
 @media (max-width : 768px) {
-	/* надо менять под видео */
-	.background-video-news{
-		object-position: 80%;
-	}
+
 }
 
 /* xs <= Small (sm) */
 @media (max-width : 576px) {
-	.wrap-logo,
-	.nav{
-		display: none;
+	header{
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		/* можно убать прозрачность */
+		background: rgba(0, 0, 0, 0.5);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column;
+		text-align: center;
+		z-index: 4;
 	}
 
 }
@@ -42,10 +50,20 @@
 
 /* Small (sm) */
 @media (min-width : 576px) {
-	.navbar{
-		display: none;
+	header{
+		position: fixed;
+		top: 0;
+		left: 0;	
+		width: 100%;
+		/* можно убать прозрачность */
+		background: rgba(0, 0, 0, 0.5);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: row;
+		text-align: center;
+		z-index: 4;
 	}
-	
 }
 
 /* Medium (md) */
