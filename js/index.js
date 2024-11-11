@@ -16,7 +16,7 @@ navLinksHead.forEach(link => {
 });
 
 // Получаем все ссылки навигации
-const navLinks = document.querySelectorAll('.nav a');
+const navLinks = document.querySelectorAll('.navbar a');
 
 // Получаем лого
 const logo = document.querySelector('.logo');
@@ -24,40 +24,43 @@ const logo = document.querySelector('.logo');
 // Добавляем обработчик событий на каждую ссылку
 navLinks.forEach(link => {
     link.addEventListener('click', function() {
-        // Убираем класс 'active' у всех ссылок
-        navLinks.forEach(link => link.classList.remove('active'));
+        // Убираем класс 'activate' у всех ссылок
+        navLinks.forEach(link => link.classList.remove('activate'));
 
-        // Добавляем класс 'active' к нажатой ссылке
-        this.classList.add('active');
+        // Добавляем класс 'activate' к нажатой ссылке
+        this.classList.add('activate');
     });
 });
 
 // Добавляем обработчик событий на лого
 logo.addEventListener('click', function() {
-    // Убираем класс 'active' у всех ссылок
-    navLinks.forEach(link => link.classList.remove('active'));
+    // Убираем класс 'activate' у всех ссылок
+    navLinks.forEach(link => link.classList.remove('activate'));
 
     // Добавляем класс 'active' к ссылке "Главная"
-    document.querySelector('.nav a[href="#home"]').classList.add('active');
+    document.querySelector('.navbar a[href="#home"]').classList.add('activate');
 });
 
 //Скрипт для скрола
 let section = document.querySelectorAll('section');
-let links = document.querySelectorAll('header nav a');
+let links = document.querySelectorAll('header .navbar a');
 
-window.onscroll = () =>{
-    section.forEach(sec =>{
+let isScrolling;  // переменная для контроля состояния скроллинга
 
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 100;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
+window.onscroll = () => {
+    clearTimeout(isScrolling);
 
-        if(top >= offset && top < offset + height) {
-            links.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a[href*='+ id +']').classList.add('active');
-            });
-        }
-    });
+    isScrolling = setTimeout(() => {
+        section.forEach(sec => {
+            let top = window.scrollY;
+            let offset = sec.offsetTop - 100;
+            let height = sec.offsetHeight;
+            let id = sec.getAttribute('id');
+
+            if (top >= offset && top < offset + height) {
+                links.forEach(link => link.classList.remove('activate'));
+                document.querySelector('header .navbar a[href*=' + id + ']').classList.add('activate');
+            }
+        });
+    }, 100);  // скрипт обновляется раз в 100 мс при прокрутке
 };

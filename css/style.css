@@ -92,7 +92,10 @@ a{
     z-index: 1;
 }
 
-/* Шапка */
+/* Шапка  была перенесена в media-запросы*/
+header nav a.activate {
+  background-color: rgba(79,209,197,1);
+}
 
 /* .header{
     position: fixed;
