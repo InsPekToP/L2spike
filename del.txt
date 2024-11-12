@@ -1,0 +1,72 @@
+Мусор html
+        <!-- <header>
+            <div class="header">
+                <div class="wrap-logo">
+                    <a href="#" class="logo">L2Spike</a>
+                </div>
+                <nav class="nav">
+                    <a class="active" href="#home">Главная</a>
+                    <a href="#news">Новости</a>
+                    <a href="#about">О сервере</a>
+                </nav>
+
+                
+                <nav id="navbar" class="navbar">
+                    <ul>
+                        <li><a id="home_lg" href="#home">Главная</a></li>
+                        <li><a id="education_lg" href="#news">Новости</a></li>
+                        <li><a id="about_lg" href="#about">О сервере</a></li>
+                    </ul>
+                    
+                </nav>      
+        </header> -->
+
+мусор .css
+
+/* Мусор,удалить как все сделаю */
+/* .header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 4;
+    padding: 20px;
+}
+
+.wrap-logo {
+  display: flex;
+  align-items: center;
+ 
+}
+
+header a {
+  color: #fff;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  border-radius: 4px;
+}
+
+header a.logo {
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--main-clr);
+}
+
+header nav a:hover {
+  background-color: rgba(79,209,197,1);
+  color: #212121;
+}
+
+header nav a.active {
+  background-color: rgba(79,209,197,1);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  } */
+
+/*Конец мусора,удалить как все сделаю */  
