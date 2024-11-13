@@ -74,7 +74,7 @@ a{
     bottom: 0;
     background: linear-gradient(to bottom, rgba(0,0,0,1) 10%,transparent) top,
                 linear-gradient(to top, rgba(0,0,0,1) 10%,transparent) bottom;
-    background-size: 100% 30%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     z-index: 3;
 } 
@@ -199,6 +199,52 @@ header nav a.activate {
 /* Конец кнопки */
 
 /*Старт секции новости */
+/* стили для карточек */
+.news-container {
+  display: flex;
+  /* margin-top: 10rem; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+  z-index: 4; /* Чтобы быть поверх градиента */
+  flex-wrap: wrap; /* Чтобы карточки переносились на новую строку на узких экранах */
+}
+
+.news-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.news-card:hover {
+  transform: scale(1.05);
+}
+
+.news-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.news-date {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.news-description {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+/*Конец стилей для карточек */
 #news h1{
   position: absolute;
   font-size: 100px;

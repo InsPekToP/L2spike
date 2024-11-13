@@ -17,10 +17,29 @@
 
 /* sm <= Medium (md) */
 @media (max-width : 768px) {
-	/* надо менять под видео */
-	.background-video-news{
+	.news-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news-card {
+        width: 90%; /* Карточка займет 90% ширины экрана */
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .news-card h2 {
+        font-size: 1.2rem;
+    }
+
+    .news-description {
+        font-size: 0.95rem;
+    }
+
+	/* смещение видео-фона */
+	/* .background-video-news{
 		object-position: 80%;
-	}
+	} */
 }
 
 /* xs <= Small (sm) */
