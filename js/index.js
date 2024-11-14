@@ -64,3 +64,14 @@ window.onscroll = () => {
         });
     }, 100);  // скрипт обновляется раз в 100 мс при прокрутке
 };
+
+
+// Функция для показа формы
+function showForm() {
+    var form = document.getElementById("linkForm");
+    if (form.style.display === "none" || form.style.display === "") {
+        form.style.display = "block";
+    } else {
+        form.style.display = "none";
+    }
+}
