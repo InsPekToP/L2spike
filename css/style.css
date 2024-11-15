@@ -204,7 +204,6 @@ header nav a.activate {
   z-index: 10;
 }
 
-/* Стиль ссылок */
 .link-form a {
   display: inline-block;
   color: #FFD700;
@@ -225,6 +224,20 @@ header nav a.activate {
   box-shadow: 0 0 8px #FFD700, 0 0 12px #fff;
   transform: scale(1.1);
 }
+
+/* .link-form {
+  display: none;
+  position:relative;
+  z-index: 10;
+  width: 80vw;
+  height: 80vh;
+  background: #313133;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+} */
+
 /* Конец стилей для главной страницы */
 
 
