@@ -69,9 +69,16 @@ window.onscroll = () => {
 // Функция для показа формы
 function showForm() {
     var form = document.getElementById("linkForm");
-    if (form.style.display === "none" || form.style.display === "") {
-        form.style.display = "block";
-    } else {
-        form.style.display = "none";
-    }
+    var overlay = document.querySelector(".modal-overlay");
+
+    form.classList.add("show");
+    overlay.classList.add("show");
+}
+
+function hideForm() {
+    var form = document.getElementById("linkForm");
+    var overlay = document.querySelector(".modal-overlay");
+
+    form.classList.remove("show");
+    overlay.classList.remove("show");
 }
