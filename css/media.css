@@ -35,11 +35,24 @@
     .news-description {
         font-size: 0.95rem;
     }
+	/* стили для модального окна */
+	.modal-header {
+		padding-top: 1rem;
+		padding-bottom: 0.5rem; /* Меньше отступы на маленьких экранах */
+		margin-bottom: 1rem; /* Меньше отступ */
+	  }
+	
+	  .modal-title {
+		font-size: 1.25rem; /* Уменьшаем размер шрифта */
+	  }
 
 	/* смещение видео-фона */
 	/* .background-video-news{
 		object-position: 80%;
 	} */
+
+	
+
 }
 
 /* xs <= Small (sm) */
@@ -137,6 +150,18 @@
 		color: #fff;
 		/* box-shadow: var(--glowing-bxs); */
 	}
+
+	/* стили для модального окна */
+	.modal-header {
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem; /* Очень маленькие отступы */
+		margin-bottom: 1rem;
+		margin-top: 1rem;
+	  }
+	
+	  .modal-title {
+		font-size: 1.1rem; /* Ещё меньше шрифт */
+	  }
 
 }
 

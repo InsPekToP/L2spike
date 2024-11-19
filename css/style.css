@@ -202,7 +202,24 @@ header nav a.activate {
   transform: scale(1.1);
 }
 
+/* стили для контента внутри модального окна */
+
+.modal-header {
+  text-align: center;
+  padding-bottom: 1rem; /* Используем rem для отступов */
+  border-bottom: 0.125rem solid #ccc; /* Толщина линии в rem */
+  margin-bottom: 2rem; /* Отступ снизу */
+}
+
+.modal-title {
+  font-size: 1.5rem; /* Размер шрифта относительно корневого элемента */
+  font-weight: bold;
+  margin: 0;
+}
+
+
 /* Стили для ссылок внутри модального окна */
+/* вроде можно удалить */
 .link-form a {
   display: block;
   text-decoration: none;
@@ -218,14 +235,14 @@ header nav a.activate {
 
 /* Затемнение фона, когда открыто модальное окно */
 .modal-overlay {
-  display: none; /* Скрываем по умолчанию */
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
-  z-index: 6; /* Под модальным окном */
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 6;
 }
 
 /* Показываем модальное окно при активации */
