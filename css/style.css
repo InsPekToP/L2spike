@@ -203,16 +203,15 @@ header nav a.activate {
 }
 
 /* стили для контента внутри модального окна */
-
 .modal-header {
   text-align: center;
-  padding-bottom: 1rem; /* Используем rem для отступов */
-  border-bottom: 0.125rem solid #ccc; /* Толщина линии в rem */
-  margin-bottom: 2rem; /* Отступ снизу */
+  padding-bottom: 1rem;
+  border-bottom: 0.125rem solid #ccc;
+  margin-bottom: 2rem;
 }
 
 .modal-title {
-  font-size: 1.5rem; /* Размер шрифта относительно корневого элемента */
+  font-size: 1.5rem;
   font-weight: bold;
   margin: 0;
 }
