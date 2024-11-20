@@ -205,15 +205,17 @@ header nav a.activate {
 /* стили для контента внутри модального окна */
 .modal-header {
   text-align: center;
-  padding-bottom: 1rem;
+  /* padding-top: 5%; */
+  padding-bottom: 5%;
   border-bottom: 0.125rem solid #ccc;
-  margin-bottom: 2rem;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 .modal-title {
-  font-size: 1.5rem;
+  font-size: calc(var(--index)*2);
   font-weight: bold;
-  margin: 0;
+  /* margin: 0; */
 }
 
 
