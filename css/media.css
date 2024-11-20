@@ -35,9 +35,37 @@
     .news-description {
         font-size: 0.95rem;
     }
+
+
+
 	/* стили для модального окна */
 	.modal-header {
 		padding-top: 10%;
+	}
+	
+	.modal-content {
+		margin-top: 10vh; /* Отступ сверху 10% от высоты экрана */
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		align-items: center; /* Центрирование по горизонтали */
+		padding: 1rem; /* Отступы от краев */
+	}
+
+	.modal-row {
+		flex-direction: column; /* Переключаемся на вертикальное расположение */
+		align-items: center; /* Центрирование всех элементов */
+		gap: 0.5rem; /* Расстояние между текстом и кнопкой */
+		font-size:larger;
+	}
+	
+	.modal-row span {
+		text-align: center; /* Центрируем текст */
+		margin-bottom: 1rem; /* Добавляем отступ под текст */
+	}
+	
+	.modal-row .button-modal {
+		text-align: center; /* Центрирование кнопки */
 	}
 
 	/* смещение видео-фона */
@@ -145,17 +173,7 @@
 		/* box-shadow: var(--glowing-bxs); */
 	}
 
-	/* стили для модального окна */
-	/* .modal-header {
-		padding-top: 0.5rem;
-		padding-bottom: 0.5rem;
-		margin-bottom: 1rem;
-		margin-top: 1rem;
-	  }
-	
-	  .modal-title {
-		font-size: 1.1rem;
-	  } */
+/* стили для модального окна */	
 
 }
 
