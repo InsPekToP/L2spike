@@ -241,14 +241,60 @@ header nav a.activate {
   text-align: left;
 }
 
-.modal-row .button-modal {
+/* .modal-row .button-modal {
   text-align: center;
+} */
+
+/* Кнопка в модальном окне */
+.container-btn-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
 }
+.container-btn-modal a {
+  font-size: calc(var(--index));
+  padding: 1rem 3rem;
+  color: #f4f4f4;
+  /* text-transform: uppercase; */
+}
+
+.btn-modal {
+  text-decoration: none;
+  border: 1px solid rgb(146, 148, 248);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-modal:hover {
+  box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+}
+
+.btn-modal:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(146, 148, 248, 0.4),
+    transparent
+  );
+  transition: all 650ms;
+}
+
+.btn-modal:hover:before {
+  left: 100%;
+}
+/*Конец кнопки в модальном окне */
 
 
 /* Стили для ссылок внутри модального окна */
 /* вроде можно удалить */
-.link-form a {
+/* .link-form a {
   display: block;
   text-decoration: none;
   color: #007bff;
@@ -259,7 +305,7 @@ header nav a.activate {
 
 .link-form a:hover {
   color: #0056b3;
-}
+} */
 
 /* Затемнение фона, когда открыто модальное окно */
 .modal-overlay {
@@ -395,4 +441,4 @@ header nav a.activate {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/*Старт секции about */
+/*Конец секции about */

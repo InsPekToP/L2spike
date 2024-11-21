@@ -67,6 +67,11 @@
 	.modal-row .button-modal {
 		text-align: center; /* Центрирование кнопки */
 	}
+/* свечение на модальной кнопке */
+	.btn-modal{
+		box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+	  }
+	  
 
 	/* смещение видео-фона */
 	/* .background-video-news{
