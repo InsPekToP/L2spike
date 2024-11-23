@@ -72,19 +72,91 @@ header nav a.activate {
     z-index: 1;
 }
 
-/* Кнопка */
-.wrap__btn{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2; /* Выше видео */
+/* Заголовок */
+/* .heading{
+  position: relative;
+  z-index: 2;
+  width: 70vw;
+  height: 50vh;
+  background: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
 }
-  
+.heading h1{
+  font-size: calc(var(--index)*3);
+} */
+
+.wrapper-heading {
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+  z-index: 4; /* Чтобы быть поверх градиента */
+  flex-wrap: wrap; /* Чтобы карточки переносились на новую строку на узких экранах */
+}
+
+.heading {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  /* max-width: 300px; */
+  width: 90%;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+}
+
+.heading h1 {
+  font-size: calc(var(--index)*3);
+  margin-bottom: 10px;
+  /* color: #000; */
+}
+
+.heading h2 {
+  font-size: calc(var(--index)*1.5);
+  color:#2563EB;;
+  font-style: italic;
+}
+
+
+/* Кнопка */
+.wrap__btn {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.button__title {
+  font-size: 22px; /* Размер шрифта для основного текста */
+  font-weight: 700;
+}
+
+.button__subtitle {
+  display: block; /* Переводим в блочный элемент, чтобы текст был снизу */
+  font-size: 14px; /* Размер шрифта меньше основного */
+  font-weight: 400; /* Тонкий шрифт для отличия */
+  opacity: 0.8; /* Можно сделать чуть светлее */
+  margin-top: 5px; /* Отступ сверху от основного текста */
+  text-transform: none; /* Обычное написание */
+  letter-spacing: normal; /* Убираем лишний разряд между буквами */
+}
+
 .button {
     min-width: 300px;
     min-height: 60px;
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
     font-size: 22px;
     align-items: center;
     justify-content: center;

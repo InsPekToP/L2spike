@@ -274,10 +274,10 @@
 		text-align: center;
 		padding: 0rem 0rem 0rem;
 		margin-right: calc(var(--index));
-		display: flex; /* включаем Flexbox */
-		justify-content: center; /* центрируем кнопки */
-		gap: 0.1rem; /* добавляем расстояние между кнопками */
-		flex-wrap: nowrap; /* предотвращаем перенос элементов */
+		display: flex; 
+		justify-content: center;
+		gap: 0.1rem;
+		flex-wrap: nowrap;
 	}
 
 	.social-media a{
