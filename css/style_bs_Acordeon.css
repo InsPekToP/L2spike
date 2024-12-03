@@ -19,21 +19,3 @@ body{
 .container {
     margin-top: 40px; /* Отступ сверху для контейнера */
 }
-
-.accordion-layout {
-    display: flex;
-    align-items: flex-start; /* Выравнивание по верхнему краю */
-}
-
-.accordion {
-    flex: 1; /* Занимает 50% ширины */
-    margin-right: 20px; /* Отступ справа от аккордеона */
-}
-
-.accordion-content {
-    flex: 2; /* Занимает оставшееся пространство */
-    background-color: #f8f9fa; /* Светлый фон для тела */
-    padding: 20px; /* Внутренний отступ */
-    border: 1px solid #dee2e6; /* Легкая граница */
-    border-radius: 8px; /* Закругленные углы */
-}
