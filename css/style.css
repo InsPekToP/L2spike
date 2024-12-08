@@ -564,7 +564,7 @@ header nav a.activate {
 }
 /*Конец видео на фоне */
 
-#about h1{
+/* #about h1{
   position: absolute;
   font-size: 100px;
   color: #fff;
@@ -572,5 +572,17 @@ header nav a.activate {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+} */
+
+.accordion-wrapper{
+  position: absolute;
+  background: red;
+  z-index: 3;
+  width: 80%;
+  height: 80%;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
 /*Конец секции about */
