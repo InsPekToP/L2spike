@@ -291,7 +291,7 @@ header nav a.activate {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   padding: 5%;
   width: 70vw; /* Ширина модального окна */
-  height: 70vh;
+  /* height: 70vh; */
   z-index: 7; /* Поверх остальных элементов */
 
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg_modal.webp") center no-repeat;
@@ -322,10 +322,11 @@ header nav a.activate {
 /* стили для контента внутри модального окна */
 .modal-header {
   text-align: center;
-  padding-bottom: 5%;
+  justify-content: center;
+  padding-bottom: 2%;
   border-bottom: 0.125rem solid #ccc;
   margin-bottom: 5%;
-  margin-top: 5%;
+  margin-top: 2%;
   color: #fff;
 }
 
