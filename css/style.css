@@ -576,7 +576,8 @@ header nav a.activate {
   transform: translate(-50%, -50%);
 } */
 
-.accordion-wrapper{
+.accordion-wrapper,
+.list-wrapper{
   position: absolute;
   /* background: red; */
   z-index: 3;
