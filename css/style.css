@@ -141,7 +141,11 @@ header nav a.activate {
 }
 
 .heading {
-  background-color: rgba(255, 255, 255, 0.1);
+  /* background-color: rgba(255, 255, 255, 0.1); */
+
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+
   color: #fff;
   padding: 20px;
   border-radius: 8px;
@@ -150,7 +154,7 @@ header nav a.activate {
   text-align: center;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) */
 }
 
 .heading h1 {
@@ -172,7 +176,7 @@ header nav a.activate {
 /* Кнопка */
 .wrap__btn {
   position: absolute;
-  bottom: 20%;
+  bottom: 15%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
@@ -486,7 +490,11 @@ header nav a.activate {
 }
 
 .news-card {
-  background-color: rgba(255, 255, 255, 0.1);
+  /* background-color: rgba(255, 255, 255, 0.1); */
+
+  background-color: transparent;
+  backdrop-filter: blur(50px);
+
   color: #fff;
   padding: 20px;
   border-radius: 8px;
