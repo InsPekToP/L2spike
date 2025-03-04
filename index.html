@@ -30,35 +30,26 @@
             <div class="container">
 
                 <div class="countdown-text">
-                    Exclusive Black Friday ! Offer <span class="span skewBg">10</span>Days
+                    Здесь рождаются легенды!
+                    <!-- <span class="span skewBg">10</span>Days -->
                 </div>
 
                 <div class="social-wrapper">
 
-                    <p class="social-title">Follow us on :</p>
+                    <p class="social-title">Будьте в курсе новостей :</p>
 
                     <ul class="social-list">
                         <li>
-                            <a href="#" class="social-link">
-                                <ion-icon name="logo-facebook"></ion-icon>
+                            <a href="https://t.me/l2spike" target="_blank" class="social-link">
+                                <ion-icon name="paper-plane"></ion-icon>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="social-link">
-                                <ion-icon name="logo-twitter"></ion-icon>
+                            <a href="https://discord.gg/pSQJGDmryB" target="_blank" class="social-link">
+                                <ion-icon name="logo-discord"></ion-icon>
                             </a>
                         </li>
-                        <li>
-                            <a href="#" class="social-link">
-                                <ion-icon name="logo-pinterest"></ion-icon>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="social-link">
-                                <ion-icon name="logo-linkedin"></ion-icon>
-                            </a>
-                        </li>
-
+                        
                     </ul>
 
                 </div>
@@ -73,27 +64,31 @@
                 <nav class="navbar" data-navbar>
                     <ul class="navbar-list">
                         <li class="navbar-item">
-                            <a href="#home" class="navbar-link skewBg" data-nav-link>Home</a>
+                            <a href="#home" class="navbar-link skewBg" data-nav-link>Главная</a>
                         </li>
 
                         <li class="navbar-item">
-                            <a href="#live" class="navbar-link skewBg" data-nav-link>Live</a>
+                            <a href="#download" class="navbar-link skewBg" data-nav-link>Файлы</a>
                         </li>
 
                         <li class="navbar-item">
+                            <a href="#live" class="navbar-link skewBg" data-nav-link>О сервере</a>
+                        </li>
+
+                        <!-- <li class="navbar-item">
                             <a href="#features" class="navbar-link skewBg" data-nav-link>Features</a>
                         </li>
 
                         <li class="navbar-item">
                             <a href="#shop" class="navbar-link skewBg" data-nav-link>Shop</a>
+                        </li> -->
+
+                        <li class="navbar-item">
+                            <a href="#blog" class="navbar-link skewBg" data-nav-link>Новости</a>
                         </li>
 
                         <li class="navbar-item">
-                            <a href="#blog" class="navbar-link skewBg" data-nav-link>Blog</a>
-                        </li>
-
-                        <li class="navbar-item">
-                            <a href="#contact" class="navbar-link skewBg" data-nav-link>Contact</a>
+                            <a href="#contact" class="navbar-link skewBg" data-nav-link>Обратная связь</a>
                         </li>
                     </ul>
                 </nav>
@@ -101,15 +96,19 @@
 
                 <div class="header-actions">
                     
-                    <button class="cart-btn" aria-label="cart">
-                        <ion-icon name="cart"></ion-icon>
 
-                        <span class="cart-badge">0</span>
-                    </button>
+                    <a href="#download">
+                        <button class="download-btn" aria-label="download">
+                            <ion-icon name="download-outline"></ion-icon>
+
+                            <!-- <span class="cart-badge">0</span> -->
+                        </button>
+                    </a>
+                    
                 
-                    <button class="search-btn" aria-label="open search" data-search-toggler>
-                        <ion-icon name="search-outline"></ion-icon>
-                    </button>
+                    <!-- <button class="person-btn" aria-label="person register" data-search-toggler>
+                        <ion-icon name="person-outline"></ion-icon>
+                    </button> -->
 
                     <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
                         <ion-icon name="menu-outline" class="menu"></ion-icon>
@@ -129,16 +128,16 @@
 <!-- SEARCH BOX -->
 
 
-<div class="search-container" data-search-box>
+<div class="register-container" data-search-box>
 
     <div class="input-wrapper">
-        <input type="search" name="search" aria-label="search" placeholder="Search here..." class="search-field">
+        <input type="register" name="register" aria-label="register" placeholder="Скоро..." class="register-field">
 
-        <button class="search-submit" aria-label="submit search" data-search-toggler>
-            <ion-icon name="search-outline"></ion-icon>
+        <button class="register-submit" aria-label="register persons" data-search-toggler>
+            <ion-icon name="person-outline"></ion-icon>
         </button>
 
-        <button class="search-close" aria-label="close search" data-search-toggler></button>
+        <button class="register-close" aria-label="close register" data-search-toggler></button>
     </div>
     
 </div>
@@ -155,15 +154,17 @@
 
                 <div class="hero-content">
 
-                    <p class="hero-subtitle">Мировая Игра</p>
+                    <p class="hero-subtitle">Мировая Игра <span class="span">Lineage 2</span></p>
 
                     <h1 class="h1 hero-title">
-                        Создай <span class="span">Manage</span> Matches
+                        Новый <span class="span">Interlude</span>x1200
                     </h1>
 
                     <p class="hero-text">Find technology or people for digital projects in public sector and Find an individual specialist develope researcher.</p>
 
-                    <button class="btn skewBg">Read More</button>
+                    <a href="#download" class="hero-link">
+                        <button class="btn skewBg">Начать играть</button>
+                    </a>
 
                 </div>
 
@@ -221,7 +222,7 @@
 
             <!-- LATEST GAME -->
 
-            <section class="section latest-game" aria-label="latest game">
+            <section class="section latest-game" id="download" aria-label="latest game">
                 <div class="container">
 
                     <p class="section-subtitle">Latest Releases</p>
@@ -332,7 +333,7 @@
 
                     </figure>
 
-                    <div class="live-match-player">
+                    <!-- <div class="live-match-player">
 
                         <figure class="player player-1 img-holder" style="--width: 406; --height: 277;">
                             <img src="./assets/images/live-match-player-1.png" width="406" height="277" loading="lazy" alt="tokyo eagle" class="w-100">
@@ -350,7 +351,7 @@
                             <img src="./assets/images/live-match-player-2.png" width="400" height="305" loading="lazy" alt="new york hunter7" class="w-100">
                         </figure>
 
-                    </div>
+                    </div> -->
 
                 </div>
             </section>
@@ -361,7 +362,7 @@
         <!-- FEATURED GAME -->
 
 
-        <section class="section featured-game" id="features" aria-label="featured-game">
+        <!-- <section class="section featured-game" id="features" aria-label="featured-game">
             <div class="container">
  
                 <h2 class="h2 section-title">
@@ -545,13 +546,13 @@
                 </ul>
 
             </div>
-        </section>
+        </section> -->
 
 
         <!-- SHOP -->
         
 
-        <section class="section shop" id="shop" aria-label="shop" style="background-image: url('./assets/images/shop-bg.jpg');">
+        <!-- <section class="section shop" id="shop" aria-label="shop" style="background-image: url('./assets/images/shop-bg.jpg');">
                 <div class="container">
 
                     <h2 class="h2 section-title">
@@ -679,7 +680,7 @@
                     </ul>
 
                 </div>
-        </section>
+        </section> -->
 
 
 
@@ -887,7 +888,7 @@
 
             <div class="footer-brand">
 
-                <a href="#" class="logo">Gamics</a>
+                <a href="#" class="logo">L2Spike</a>
 
                 <p class="footer-text">
                     Gamics marketplace the relase etras thats sheets continig passag.
@@ -985,26 +986,14 @@
                     <ul class="social-list">
 
                         <li>
-                            <a href="#" class="social-link" style="background-color: #3b5998;">
-                                <ion-icon name="logo-facebook"></ion-icon>
+                            <a href="https://t.me/l2spike" target="_blank" class="social-link" style="background-color: #0088cc;">
+                                <ion-icon name="paper-plane"></ion-icon>
                             </a>
                         </li>
                         
                         <li>
-                            <a href="#" class="social-link" style="background-color: #55acee;">
-                                <ion-icon name="logo-twitter"></ion-icon>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="social-link" style="background-color: #d71e18;">
-                                <ion-icon name="logo-pinterest"></ion-icon>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="social-link" style="background-color: #1565c0;">
-                                <ion-icon name="logo-linkedin"></ion-icon>
+                            <a href="https://discord.gg/pSQJGDmryB" target="_blank" class="social-link" style="background-color: #7289DA;">
+                                <ion-icon name="logo-discord"></ion-icon>
                             </a>
                         </li>
 
@@ -1035,7 +1024,7 @@
         <div class="container">
 
             <p class="copiringht">
-                &copy; 2025 Gamics. All Right Reserved by 
+                &copy; 2025 L2Spike. All Right Reserved by 
                 
                 <a href="#" class="copyright-link">InsPekToP & GZU</a>
             </p>
