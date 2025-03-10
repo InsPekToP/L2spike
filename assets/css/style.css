@@ -602,6 +602,7 @@ h1,h2,h3 {
     color: var(--silver);
     font-size: var(--fs-10);
     font-weight: var(--fw-600);
+    display: flex;
 }
 
 .latest-game-card .card-price .span {
@@ -618,6 +619,7 @@ h1,h2,h3 {
 
 .live-match .section-title {
     margin-block-end: 90px;
+    margin-block-start: 50px;
 }
 
 .live-match-banner {
@@ -837,7 +839,7 @@ h1,h2,h3 {
 .shop-card .card-btn {
     color: inherit;
     font-size: 18px;
-    padding: 7px;
+    padding: 5px 25px;
     border: 1px solid var(--english-violet);
     border-radius: 4px;
     transition: var(--transition);

@@ -55,11 +55,13 @@ aria-label = close register
 
 Мировая Игра Lineage 2
 
-Create Manage Matches
+Новый Interlude x1200
 
-Find technology or people for digital projects in public sector and Find an individual specialist develope researcher.
+L2Spike – новый PvP-сервер Lineage 2 на хрониках Interlude с рейтами x1200. В данный момент сервер находится на стадии разработки.
+Мы создаем уникальный игровой мир с динамичными PvP-сражениями, сбалансированной экономикой и интересными ивентами. 
+Следите за новостями и будьте в числе первых, кто откроет для себя L2Spike!
 
-Read More
+Начать играть
 
 alt = hero banner
 
@@ -73,11 +75,11 @@ alt = brand logo
 
 #---------- LATEST GAME ----------#
 
-Latest Releases
+Начни игру
 
-Create & Manage
+Сделав 3 Шага
 
-alt = White Walker Daily
+alt = White Walker Daily - поменять когда сделаю картинки
 
 Zombie
 
