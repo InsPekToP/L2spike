@@ -197,7 +197,7 @@ h1,h2,h3 {
 
 .has-scrollbar {
     display: flex;
-    gap: 30px;
+    gap: 25px;
     overflow-x: auto;
     padding-block-end: 30px;
     scroll-snap-type: inline mandatory;
@@ -527,7 +527,11 @@ h1,h2,h3 {
     scroll-snap-align: start;
 }
 
-.brand-item > img {margin-inline: auto;}
+.brand-item > img {
+    margin-inline: auto;
+    border-radius: 50%;
+    border: 3px solid var(--marigold);
+}
 
 
 /* LATEST GAME */

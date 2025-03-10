@@ -53,7 +53,7 @@ aria-label = close register
 
 #---------- HERO ----------#
 
-World Gaming
+Мировая Игра Lineage 2
 
 Create Manage Matches
 
