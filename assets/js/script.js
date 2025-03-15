@@ -48,3 +48,22 @@ window.addEventListener("scroll", function() {
         backTopBtn.classList.remove("active");
     }
 });
+
+// document.getElementById('playButton').addEventListener('click', function() {
+//     document.getElementById('videoContainer').style.display = 'block';
+//     document.querySelector('.live-match-banner').style.display = 'none';
+// });
+
+document.getElementById('playButton').addEventListener('click', function() {
+    const videoWrapper = document.getElementById('videoWrapper');
+
+    // Вставляем iframe с автозапуском
+    videoWrapper.innerHTML = `
+        <iframe width="800" height="470"
+            src="https://www.youtube.com/embed/n6mE0uIkpJQ?autoplay=1&rel=0&showinfo=0"
+            frameborder="0" 
+            allow="autoplay; encrypted-media" 
+            allowfullscreen>
+        </iframe>
+    `;
+});
