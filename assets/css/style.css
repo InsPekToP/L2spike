@@ -919,6 +919,11 @@ h1,h2,h3 {
     transition: var(--transition);
 }
 
+.blog-card .card-title .span {
+    display: inline;
+    text-transform: none;
+}
+
 .blog-card .card-title:is(:hover, :focus) {
     color: var(--marigold);
 }
@@ -1029,7 +1034,12 @@ h1,h2,h3 {
     color: var(--roman-silver);
 }
 
+/* .footer-top {
+    padding-block-end: var(--section-padding);
+} */
+
 .footer-top {
+    --section-padding: 30px;
     padding-block-end: var(--section-padding);
 }
 
@@ -1675,8 +1685,9 @@ h1,h2,h3 {
     /* NEWSLETTER */
 
     .newsletter-card {
-        display: flex;
-        justify-content: space-between;
+        display: block;
+        /* display: flex;
+        justify-content: space-between; */
         align-items: center;
         padding-inline: 70px;
     }
