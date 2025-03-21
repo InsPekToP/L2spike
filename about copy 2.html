@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About copy 2</title>
+    <style>
+        .accordion {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .accordion-item {
+            border-bottom: 1px solid #ddd;
+        }
+        .accordion-item:last-child {
+            border-bottom: none;
+        }
+        .accordion-button {
+            width: 100%;
+            text-align: left;
+            background-color: #f8f9fa;
+            border: none;
+            padding: 1rem;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .accordion-button:hover {
+            background-color: #e9ecef;
+        }
+        .accordion-button.active {
+            background-color: #e9ecef;
+        }
+        .accordion-body {
+            padding: 1rem;
+            display: none;
+        }
+        .accordion-body.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <button class="accordion-button">Accordion Item #1</button>
+            <div class="accordion-body show">
+                <strong>This is the first item's accordion body.</strong> It is shown by default.
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-button">Accordion Item #2</button>
+            <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default.
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-button">Accordion Item #3</button>
+            <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.accordion-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const accordionBody = button.nextElementSibling;
+
+                document.querySelectorAll('.accordion-body').forEach(body => {
+                    if (body !== accordionBody) {
+                        body.classList.remove('show');
+                    }
+                });
+
+                document.querySelectorAll('.accordion-button').forEach(btn => {
+                    if (btn !== button) {
+                        btn.classList.remove('active');
+                    }
+                });
+
+                accordionBody.classList.toggle('show');
+                button.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
