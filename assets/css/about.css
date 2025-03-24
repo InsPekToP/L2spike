@@ -1,4 +1,4 @@
-.accordion {
+/* .accordion {
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
@@ -28,6 +28,73 @@
     padding: 1rem;
     display: none;
 }
+.accordion-body.show {
+    display: block;
+} */
+
+:root {
+    /* colors */
+    --background-dark: var(--xiketic);
+    --background-dark-hover: var(--xiketic_90);
+    --text-light: var(--white);
+    --border-color: var(--jet);
+
+    /* typography */
+    --font-family: var(--ff-montserrat);
+    --font-weight-bold: var(--fw-700);
+
+    /* spacing */
+    --padding: 1rem;
+    --border-radius: 8px;
+
+    /* transition */
+    --transition: var(--transition);
+}
+
+.accordion {
+    background-color: var(--background-dark);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-2);
+}
+
+.accordion-item {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-button {
+    width: 100%;
+    text-align: left;
+    background-color: var(--background-dark);
+    color: var(--text-light);
+    border: none;
+    padding: var(--padding);
+    cursor: pointer;
+    font-weight: var(--font-weight-bold);
+    font-family: var(--font-family);
+    transition: background-color var(--transition);
+}
+
+.accordion-button:hover {
+    background-color: var(--background-dark-hover);
+}
+
+.accordion-button.active {
+    background-color: var(--background-dark-hover);
+}
+
+.accordion-body {
+    padding: var(--padding);
+    display: none;
+    color: var(--text-light);
+    background-color: var(--background-dark);
+}
+
 .accordion-body.show {
     display: block;
 }
