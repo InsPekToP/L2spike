@@ -1780,6 +1780,7 @@ h1,h2,h3 {
     color: var(--white);
     max-width: 90%;
     line-height: 1.5;
+    /* text-align: center; */
 }
 
 .accordion-description .label {
@@ -1791,4 +1792,11 @@ h1,h2,h3 {
 
 .accordion-description p {
     margin: 1rem 0;
+}
+
+.accordion-description p .mail {
+    color: var(--marigold);
+    font-weight: var(--fw-700);
+    font-size: var(--fs-5);
+    display: inline;
 }
