@@ -1794,6 +1794,10 @@ h1,h2,h3 {
     margin: 1rem 0;
 }
 
+.accordion-description .about-start {
+    margin-block: 5rem;
+}
+
 .accordion-description p .mail {
     color: var(--marigold);
     font-weight: var(--fw-700);
