@@ -1780,14 +1780,23 @@ h1,h2,h3 {
     color: var(--white);
     max-width: 90%;
     line-height: 1.5;
-    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .accordion-description .label {
     color: var(--marigold);
     font-weight: var(--fw-700);
     font-size: var(--fs-5);
-    display: inline;
+    /* display: inline; */
+}
+
+.accordion-description .start-wrapper-image{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
 }
 
 .accordion-description p {
