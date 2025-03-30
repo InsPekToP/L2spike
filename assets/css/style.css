@@ -1378,6 +1378,11 @@ h1,h2,h3 {
         bottom: 50px;
         right: 45px;
     }
+
+    /* ABOUT */
+    .accordion-content .accordion-description .start-wrapper-image{
+        flex-direction: row;
+    }
 }
 
 
@@ -1795,13 +1800,15 @@ h1,h2,h3 {
 
 .accordion-description .start-wrapper-image{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 1rem;
 }
+
 
 .accordion-description p {
     margin: 1rem 0;
 }
+
 
 .accordion-description .start-image {
     margin-block: 5rem;
