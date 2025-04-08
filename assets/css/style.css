@@ -1822,3 +1822,26 @@ h1,h2,h3 {
     font-size: var(--fs-5);
     display: inline;
 }
+
+.image-wrapper {
+    position: relative;
+    display: inline;
+    text-transform: uppercase;
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: var(--fs-5);
+    font-weight: var(--fw-700);
+    text-shadow: 1px 1px 5px black;
+    text-align: center;
+    pointer-events: none;
+}
+
+.image-text .span {
+    color: var(--marigold);
+    display: inline-block;
+}
