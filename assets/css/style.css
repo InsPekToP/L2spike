@@ -1775,7 +1775,7 @@ h1,h2,h3 {
 
 .accordion-image {
     max-width: 100%;
-    height: 200px;
+    height: auto;
     border-radius: 8px;
     box-shadow: var(--shadow-2);
 }
@@ -1844,4 +1844,37 @@ h1,h2,h3 {
 .image-text .span {
     color: var(--marigold);
     display: inline-block;
+}
+
+
+/* NEWS */
+
+.accordion-description-news {
+    font-size: var(--fs-7);
+    font-weight: var(--fw-500);
+    line-height: 1.7;
+    color: var(--white);
+    background-color: rgba(30, 30, 40, 0.5);
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.accordion-description-news .label{
+    color: var(--marigold);
+    font-weight: var(--fw-700);
+    font-size: var(--fs-5);
+    /* display: inline; */
+}
+
+.accordion-description-news p {
+    margin-bottom: 16px;
+}
+
+.accordion-description-news ul {
+    margin-bottom: 16px;
+}
+
+.accordion-description-news strong {
+    color: var(--marigold);
 }
