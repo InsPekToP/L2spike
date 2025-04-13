@@ -1811,7 +1811,7 @@ h1,h2,h3 {
 
 
 .accordion-description .start-image {
-    margin-block: 5rem;
+    margin-block: 3rem;
     border-radius: 8px;
     box-shadow: var(--shadow-2);
 }
@@ -1839,7 +1839,6 @@ h1,h2,h3 {
     text-shadow: 1px 1px 5px black;
     text-align: center;
     pointer-events: none;
-    letter-spacing: 4rem;
 }
 
 .image-text .span {
