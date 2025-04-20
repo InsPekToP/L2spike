@@ -18,18 +18,14 @@ Days
 L2Spike
 Главная
 Файлы
-Features
-Shop
+О сервере
 Новости
-Обаратная связь
 
 aria-label = download
-
 <ion-icon name="download-outline"></ion-icon>
-0
+
 
 aria-label = person register
-
 <ion-icon name="person-outline"></ion-icon>
 
 aria-label = toggle menu
@@ -53,11 +49,14 @@ aria-label = close register
 
 #---------- HERO ----------#
 
-Мировая Игра Lineage 2
+Мировая Игра
+Lineage 2
 
-Новый Interlude x1200
+Новый 
+Interlude 
+x50 000
 
-L2Spike – новый PvP-сервер Lineage 2 на хрониках Interlude с рейтами x1200. В данный момент сервер находится на стадии разработки.
+L2Spike – новый PvP-сервер Lineage 2 на хрониках Interlude с рейтами x50 000. В данный момент сервер находится на стадии разработки.
 Мы создаем уникальный игровой мир с динамичными PvP-сражениями, сбалансированной экономикой и интересными ивентами. 
 Следите за новостями и будьте в числе первых, кто откроет для себя L2Spike!
 
@@ -73,18 +72,21 @@ alt = brand logo
 
 
 
-#---------- LATEST GAME ----------#
+#---------- DOWNLOAD GAME ----------#
 
 Начни игру
 
-Сделав 3 Шага
+Сделав 
+3 Шага
 
-alt = White Walker Daily - поменять когда сделаю картинки
+alt = Download client
 
-Zombie
+Шаг - 1
 
-White Walker
-Daily
+Скачай клиент Игры
+С Google диска
+
+<ion-icon name="cloud-download"></ion-icon>
 
 Entry Fee :
 Free

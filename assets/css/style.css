@@ -232,7 +232,7 @@ h1,h2,h3 {
   }
 
 .section-title::after {
-    content: url("../images/title-underline.png");
+    content: url("../image/title-underline.png");
     position: absolute;
     top: 100%;
     left: 50%;
@@ -553,29 +553,29 @@ h1,h2,h3 {
     /* это включить,когда остальные секции будут готовы */
     /* height: 57%; */
     height: 80%;
-    background-image: url(../images/section-wrapper-bg.png);
+    background-image: url(../image/section-wrapper-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     z-index: -1;
 }
 
-.latest-game .section-title {
+.download-game .section-title {
     margin-block-end: 80px;
 }
 
-.latest-game .has-scrollbar {
+.download-game .has-scrollbar {
     margin-inline: -15px;
     padding-inline: 15px;
     scroll-padding-inline-start: 15px;
 }
 
-.latest-game-card {
+.download-game-card {
     position: relative;
     box-shadow: var(--shadow-2);
 }
 
-.latest-game-card .card-content {
+.download-game-card .card-content {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -584,30 +584,30 @@ h1,h2,h3 {
     padding: 35px 25px;
 }
 
-.latest-game-card .card-badge {
+.download-game-card .card-badge {
     position: absolute;
     bottom: 100%;
     left: 25px;
 }
 
-.latest-game-card .card-title {
+.download-game-card .card-title {
     margin-block-end: 12px;
     transition: var(--transition);
 }
 
 
-.latest-game-card .card-title:is(:hover, :focus) {
+.download-game-card .card-title:is(:hover, :focus) {
     color: var(--marigold);
 }
 
-.latest-game-card .card-price {
+.download-game-card .card-price {
     color: var(--silver);
     font-size: var(--fs-10);
     font-weight: var(--fw-600);
     display: flex;
 }
 
-.latest-game-card .card-price .span {
+.download-game-card .card-price .span {
     margin-inline-start: 5px;
 }
 
@@ -795,50 +795,50 @@ h1,h2,h3 {
     scroll-padding-inline-start: 15px;
 }
 
-.shop-card {
+.download-card {
     box-shadow: var(--shadow-4);
     height: 100%;
 }
 
-.shop-card .card-content {
+.download-card .card-content {
     position: relative;
     padding: 25px;
     padding-block-start: 40px;
 }
 
-.shop-card .card-badge {
+.download-card .card-badge {
     position: absolute;
     top: 0;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.shop-card .h3 {
+.download-card .h3 {
     font-size: var(--fs-7);
 }
 
-.shop-card .card-title {
+.download-card .card-title {
     transition: var(--transition);
     margin-block-end: 10px;
 }
 
-.shop-card .card-title:is(:hover, :focus) {
+.download-card .card-title:is(:hover, :focus) {
     color: var(--marigold);
 }
 
-.shop-card .card-wrapper {
+.download-card .card-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: var(--marigold);
 }
 
-.shop-card {
+.download-card {
     font-family: var(--ff-montserrat);
     font-weight: var(--fw-800);
 }
 
-.shop-card .card-btn {
+.download-card .card-btn {
     color: inherit;
     font-size: 18px;
     padding: 5px 25px;
@@ -847,7 +847,7 @@ h1,h2,h3 {
     transition: var(--transition);
 }
 
-.shop-card .card-btn:is(:hover,:focus) {
+.download-card .card-btn:is(:hover,:focus) {
     background-color: var(--marigold);
     color: var(--xiketic);
     border-color: var(--marigold);
@@ -1410,7 +1410,7 @@ h1,h2,h3 {
 
     .header-top {
         display: block;
-        background-image: url("../images/header-top-bg.jpg");
+        background-image: url("../image/header-top-bg.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -1558,7 +1558,7 @@ h1,h2,h3 {
 
     /* LATEST GAME */
 
-    .latest-game {
+    .download-game {
         padding-block-end: 0;
     }
 
