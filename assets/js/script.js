@@ -60,11 +60,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Вставляем iframe с автозапуском
         videoWrapper.innerHTML = `
-            <iframe width="800" height="470"
+            <iframe width="100%" height="100%"
                 src="https://www.youtube.com/embed/n6mE0uIkpJQ?autoplay=1&rel=0&showinfo=0"
                 frameborder="0" 
                 allow="autoplay; encrypted-media" 
-                allowfullscreen>
+                allowfullscreen
+                class="img-cover">
             </iframe>
         `;
     });

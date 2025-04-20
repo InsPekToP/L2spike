@@ -614,17 +614,17 @@ h1,h2,h3 {
 
 /* LIVE MATCH */
 
-.live-match {
+.instruction-video {
     padding-block-start: 0;
     overflow-x: hidden;
 }
 
-.live-match .section-title {
+.instruction-video .section-title {
     margin-block-end: 90px;
     margin-block-start: 50px;
 }
 
-.live-match-banner {
+.instruction-video-banner {
     position: relative;
     background-color: var(--light-gray-1);
     border-radius: 6px;
@@ -632,7 +632,7 @@ h1,h2,h3 {
     box-shadow: var(--shadow-3);
 }
 
-.live-match-banner .play-btn {
+.instruction-video-banner .play-btn {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -641,12 +641,12 @@ h1,h2,h3 {
     font-size: 60px;
 }
 
-.live-match-player {
+.instruction-video-player {
     position: relative;
     padding-block-start: var(--section-padding);
 }
 
-.live-match-player::after {
+.instruction-video-player::after {
     content: "LIVE";
     position: absolute;
     top: 50%;
@@ -658,15 +658,15 @@ h1,h2,h3 {
     z-index: -1;
 }
 
-.live-match-player .player {
+.instruction-video-player .player {
     max-width: max-content;
 }
 
-.live-match-player .player-2 {
+.instruction-video-player .player-2 {
     margin-inline-start: auto;
 }
 
-.live-match-detail {
+.instruction-video-detail {
     margin-block: 50px;
 }
 
@@ -1310,11 +1310,11 @@ h1,h2,h3 {
 
     /* LIVE MATCH */
 
-    .live-match-banner .play-btn {
+    .instruction-video-banner .play-btn {
         font-size: 120px;
     }
 
-    .live-match-player::after {
+    .instruction-video-player::after {
         font-size: 30rem;
     }
 
@@ -1396,7 +1396,7 @@ h1,h2,h3 {
         max-width: 960px;
     }
 
-    :is(.header, .hero, .live-match) .container {
+    :is(.header, .hero, .instruction-video) .container {
         max-width: unset;
     }
 
@@ -1565,18 +1565,18 @@ h1,h2,h3 {
     
     /* LIVE MATCH*/
 
-    .live-match-banner {
+    .instruction-video-banner {
         max-width: 700px;
         margin-inline: auto;
     }
 
-    .live-match-player {
+    .instruction-video-player {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         align-items: center;
     }
 
-    .live-match-detail {
+    .instruction-video-detail {
         margin-block: 0;
     }
 
@@ -1617,7 +1617,7 @@ h1,h2,h3 {
     /* REUSED STYLE */
 
     .container,
-    :is(.header, .hero, .live-match) .container {
+    :is(.header, .hero, .instruction-video) .container {
         max-width: 1230px;
     }
 
@@ -1660,11 +1660,11 @@ h1,h2,h3 {
         height: 72%;
     }
 
-    .live-match-banner {
-        max-width: max-content;
+    .instruction-video-banner {
+        max-width: 80%;
     }
 
-    .live-match-player::after {
+    .instruction-video-player::after {
         font-size: 35rem;
     }
 

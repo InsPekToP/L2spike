@@ -80,7 +80,6 @@ alt = brand logo
 3 Шага
 
 alt = Download client
-
 Шаг - 1
 
 Скачай клиент Игры
@@ -88,29 +87,23 @@ alt = Download client
 
 <ion-icon name="cloud-download"></ion-icon>
 
-Entry Fee :
-Free
 
-alt = Hunter Killer II
+alt = Download Patch
+Шаг - 2
+Скачай патч
+С Google диска
 
-Adventure
-
-Hunter Killer
-II
-
-Entry Fee : 
-$25.00
-
-alt = Cyberpunk Daily
-
-Action
-
-Cyberpunk
-Daily
+<ion-icon name="cloud-download"></ion-icon>
 
 
+alt = Auto Registration
+Шаг - 3
 
-#---------- LIVE MATCH ----------#
+Заходи в игру
+Включена Авторегистрация 
+
+
+#---------- INSTALLATION GUIDE----------#
 
 Watch Live 
 Match
