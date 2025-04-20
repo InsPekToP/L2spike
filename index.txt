@@ -10,10 +10,10 @@ Days
 
     Будьте в курсе новостей :
 
-<ion-icon name="logo-facebook"></ion-icon>
-<ion-icon name="logo-twitter"></ion-icon>
-<ion-icon name="logo-pinterest"></ion-icon>
-<ion-icon name="logo-linkedin"></ion-icon>
+<ion-icon name="paper-plane"></ion-icon>
+<ion-icon name="logo-discord"></ion-icon>
+<ion-icon name="logo-tiktok"></ion-icon>
+
 
 L2Spike
 Главная
