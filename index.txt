@@ -1,4 +1,6 @@
-L2Spike - Create Manage Matches
+L2Spike
+Мировая Игра Lineage 2
+Новый Interlude x50.000
 
 
 
@@ -105,184 +107,96 @@ alt = Auto Registration
 
 #---------- INSTALLATION GUIDE----------#
 
-Watch Live 
-Match
+Инструкция по 
+Установке игры
 
-alt = Live Match Video
+alt = Install Video
 
 aria-label = play video
 <ion-icon name="play"></ion-icon>
 
-alt = tokyo eagle
-
-Upcoming Live Matches
-
-08:30
-
-alt = new york hunter7
-
-
-
-#---------- FEATURED GAME ----------#
-
-All Released
-Games
-
-alt = Just for Gamers
-
-Just for
-Gamers
-
-<ion-icon name="notifications"></ion-icon>
-
-Playstation 5, Xbox
-
-alt = Need for Speed
-
-Need for
-Speed
-
-alt = Egypt Hunting Gamers
-
-Egypt Hunting
-Gamers
-
-alt = Just for Gamers
-
-Just for
-Gamers
-
-
-
-#---------- SHOP ----------#
-
-Gaming Product 
-Corner
-
-Compete with 100 players on a remote island for winner takes showdown known issue where certain skin strategic
-
-alt = Women Black T-Shirt
-
-t-shirt
-
-Women Black T-Shirt
-
-$29.00
-
-<ion-icon name="basket"></ion-icon>
-
-
-alt = Gears 5 Xbox Controller
-
-x-box
-
-Gears 5 Xbox Controller
-
-
-alt = GeForce RTX 2070
-
-Graphics
-
-GeForce RTX 2070
-
-
-alt = Virtual Reality Smiled
-
-VR-Box
-
-Virtual Reality Smiled
 
 
 
 #---------- BLOG ----------#
 
-Latest News &
-Articles
+Новости сервера &
+Обновления
+Все самые свежие новости о разработке, обновлениях и ивентах на сервере L2Spike — будь в курсе
 
-Compete With 100 Players On A Remote Island For Winner Takes Showdown Known Issue Where Certain Skin Strategic
-
-alt = Shooter Action Video
-
+alt = Golden Set of Eternity – legendary armor
 <ion-icon name="person-outline"></ion-icon>
 Admin
-
 <ion-icon name="calendar-outline"></ion-icon>
-September 19, 2022
+Март 14, 2025
 
-Shooter Action Video
-
-Compete With 100 Players On A Remote Island Thats Winner Takes Showdown Known Issue.
-
-Read More
-
+Золотой сет Вечности!
+Золотой сет Вечности уже в игре, доступен при создании персонажа!
+Подробнее
 <ion-icon name="caret-forward"></ion-icon>
 
-alt = The Walking Dead
 
-alt = Defense Of The Ancients
+alt = Soar through the skies
+<ion-icon name="person-outline"></ion-icon>
+Admin
+<ion-icon name="calendar-outline"></ion-icon>
+Март 01, 2019
+
+Парите в небесах!
+Прокачайте стиль на L2Spike! Новые крылья уже в игре — выделитесь с самого старта!
+Подробнее
+<ion-icon name="caret-forward"></ion-icon>
 
 
+alt = Launch of the "pre-Alpha" test server!
+<ion-icon name="person-outline"></ion-icon>
+Admin
+<ion-icon name="calendar-outline"></ion-icon>
+Февраль 19, 2025
 
-#---------- NEWSLETTER ----------#
+Старт тестового сервера 
+"pre-Alfa"!
+Тестовый сервер preAlfa уже запущен! Присоединяйтесь, чтобы первыми испытать L2Spike!
+Подробнее
+<ion-icon name="caret-forward"></ion-icon>
 
-Our
-Newsletter
 
-placeholder = Enter your email...
+#---------- SITE NAVIGATION ----------#
 
-<ion-icon name="mail-outline"></ion-icon>
-
-Subscribe
-<ion-icon name="paper-plane" aria-hidden="true"></ion-icon>
-
+Навигация
+Сайта
 
 
 #---------- FOOTER ----------#
 
-Gamics
+L2Spike.com
 
-Gamics marketplace the relase etras thats sheets continig passag.
 
-<ion-icon name="location"></ion-icon>
-Address : PO Box W75 Street lan West new queens
+Разделы сайта:
 
-<ion-icon name="headset"></ion-icon>
-Phone : +24 1245 654 235
+Главная
+Файлы
+О сервере
+Новости
 
-<ion-icon name="mail-open"></ion-icon>
-Email : info@exemple.com
 
-Products
+Полезные ссылки:
 
-Graphics (26)
-Backgrounds (11)
-Fonts (9)
-Music (3)
-Photography (3)
+Клиент игры
+Patch игры
 
-Need Help?
 
-Terms & Conditions
-Privacy Policy
-Refund Policy
-Affiliate
-Use Cases
+Связаться с нами:
 
-Follow Us
+<ion-icon name="paper-plane"></ion-icon>
+background-color: #0088cc;
+<ion-icon name="logo-discord"></ion-icon>
+background-color: #7289DA;
+<ion-icon name="logo-tiktok"></ion-icon>
+background-color: #010101;
 
-<ion-icon name="logo-facebook"></ion-icon>
-<ion-icon name="logo-twitter"></ion-icon>
-<ion-icon name="logo-pinterest"></ion-icon>
-<ion-icon name="logo-linkedin"></ion-icon>
 
-Newsletter Sign Up
-
-placeholder = Enter your email
-
-aria-label = submit
-<ion-icon name="rocket"></ion-icon>
-
-&copy; 2022 Gamics. All Right Reserved by codewithsadee
+&copy; 2025 L2Spike. All Right Reserved by InsPekToP & GZU
 
 
 
@@ -291,3 +205,9 @@ aria-label = submit
 aria-label = back to top
 
 <ion-icon name="caret-up"></ion-icon>
+
+
+
+#---------- ABOUT ----------#
+
+
