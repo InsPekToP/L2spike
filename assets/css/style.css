@@ -1807,8 +1807,16 @@ h1,h2,h3 {
 
 .accordion-description p {
     margin: 1rem 0;
+    text-indent: 2em;
 }
 
+.accordion-description p strong{
+    color: var(--marigold);
+}
+
+.accordion-description p em {
+    color: var(--marigold_75);
+}
 
 .accordion-description .start-image {
     margin-block: 3rem;
@@ -1821,6 +1829,10 @@ h1,h2,h3 {
     font-weight: var(--fw-700);
     font-size: var(--fs-5);
     display: inline;
+}
+
+.accordion-description ul li{
+    margin: var(--fs-9);
 }
 
 .image-wrapper {
