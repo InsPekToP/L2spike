@@ -1383,6 +1383,10 @@ h1,h2,h3 {
     .accordion-content .accordion-description .start-wrapper-image{
         flex-direction: row;
     }
+
+    .one_img {
+        width: 450px;
+    }
 }
 
 
