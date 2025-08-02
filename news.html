@@ -7,8 +7,8 @@
     <title>L2Spike • Новости • Interlude • x50.000</title>
 
 <!-- SEO -->
-    <meta name="description" content="L2Spike - Interlude x50'000 с уникальными дополнениями. Открой для себя новый мир Lineage 2! ОБТ уже запущен – не пропусти шанс стать частью эпической игры.">
-    <meta name="keywords" content="Lineage 2, L2Spike, Interlude, x50.000, ОБТ, ЗБТ, уникальные дополнения, MMORPG, сервер Lineage 2, Lineage 2 сервер, игра онлайн">
+    <meta name="description" content="L2Spike - Interlude x50'000 с уникальными дополнениями. Открой для себя новый мир Lineage 2! Старт сервера 15.08 в 20:00 по МСК – не пропусти шанс стать частью эпической игры.">
+    <meta name="keywords" content="Lineage 2, L2Spike, Interlude, x50.000, ОБТ, уникальные дополнения, MMORPG, сервер Lineage 2, Lineage 2 сервер, игра онлайн">
     <meta name="author" content="InsPekToP">
 
 
@@ -16,30 +16,28 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon180x180.png">
-    <!-- <link rel="apple-touch-icon" sizes="167x167" href="apple-touch-icon167x167.png"> -->
-    <!-- <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon120x120.png"> -->
 
 <!-- Open Graph -->
     <meta property="og:site_name" content="L2Spike.com">
     <meta property="og:locale" content="ru_RU">
     <meta property="og:title" content="L2Spike: Interlude x50'000 – Уникальный сервер Lineage 2">
-    <meta property="og:description" content="Присоединяйтесь к L2Spike: Interlude x50'000 с уникальными дополнениями. ЗБТ уже запущен – успей стать частью нового игрового мира!">
-    <meta property="og:image" content="https://l2spike.com/assets/image/logo.jpg">
-    <!-- <meta property="og:image" content="https://L2spike.com/assets/image/logo.png"> -->
+    <meta property="og:description" content="Присоединяйтесь к L2Spike: Interlude x50'000 с уникальными дополнениями. Старт сервера 15.08 в 20:00 по МСК – успей стать частью нового игрового мира!">
+    <meta property="og:image" content="https://inspektop.github.io/L2spike/assets/image/logo_15_08.png">
     <meta property="og:image:alt" content="L2Spike: Interlude x50'000 – Уникальный сервер Lineage 2">
-    <meta property="og:url" content="https://L2Spike.com">
+    <meta property="og:url" content="https://L2Spike.com/">
     <meta property="og:type" content="website">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:type" content="image/png">
-    <meta property="og:image:secure_url" content="https://inspektop.github.io/L2spike/assets/image/logo.png"> 
+    <meta property="og:image:secure_url" content="https://inspektop.github.io/L2spike/assets/image/logo_15_08.png"> 
+
 
 <!-- Twitter -->
     <meta name="twitter:site" content="L2Spike">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="L2Spike: Interlude x50'000 – Уникальный сервер Lineage 2">
-    <meta name="twitter:description" content="Окунитесь в мир L2Spike: Interlude x50'000 с уникальными дополнениями. ЗБТ уже запущен – начните свое приключение прямо сейчас!">
-    <meta name="twitter:image" content="https://l2spike.com/assets/image/logo.jpg">
+    <meta name="twitter:description" content="Окунитесь в мир L2Spike: Interlude x50'000 с уникальными дополнениями. Старт сервера 15.08 в 20:00 по МСК – начните свое приключение!">
+    <meta name="twitter:image" content="https://inspektop.github.io/L2spike/assets/image/logo_15_08.png">
 
 <!-- Microsoft -->
     <meta name="msapplication-TileColor" content="#262635">
@@ -457,11 +455,11 @@
                 </li>
 
                 <li>
-                    <a href="https://drive.google.com/file/d/11NVgmd4xPz6GocObl_D7Trm62eXF88jG/view?usp=sharing" target="_blank" class="footer-link">Клиент игры</a>
+                    <a href="https://drive.google.com/file/d/11NVgmd4xPz6GocObl_D7Trm62eXF88jG/view?usp=sharing" onclick="showNotice(event)" target="_blank" class="footer-link">Клиент игры</a>
                 </li>
 
                 <li>
-                    <a href="https://drive.google.com/file/d/1soJd1i1U8FWFWWjYv-6Ac1uQ_Cg4u--T/view?usp=sharing" target="_blank" class="footer-link">Patch игры</a>
+                    <a href="https://drive.google.com/file/d/1soJd1i1U8FWFWWjYv-6Ac1uQ_Cg4u--T/view?usp=sharing" onclick="showNotice(event)" target="_blank" class="footer-link">Patch игры</a>
                 </li>
                 
 
@@ -528,6 +526,19 @@
     <ion-icon name="caret-up"></ion-icon>
 </a>
 
+
+<!-- MODAL WINDOW -->
+
+<div id="notice-modal" style="display:none;" onclick="closeNotice(event)">
+  <div class="modal-content" onclick="event.stopPropagation()">
+    <p>
+      Файлы к игре будут доступны <b>11.08</b> при запуске ОБТ сервера,<br>
+      а пока можете следить за нашими новостями в ТГ:<br>
+      <a href="https://t.me/l2spikecom" target="_blank">@L2spikecom</a>
+    </p>
+    <button onclick="closeNotice(event)">Закрыть</button>
+  </div>
+</div>
 
 
 

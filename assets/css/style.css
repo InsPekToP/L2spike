@@ -1894,3 +1894,88 @@ h1,h2,h3 {
 .accordion-description-news strong {
     color: var(--marigold);
 }
+
+
+/* Модальное окно */
+
+/* #notice-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  text-align: center;
+} */
+
+/* Фон */
+#notice-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 5, 25, 0.85); /* темный фиолетовый оттенок */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+  animation: fadeIn 0.3s ease;
+}
+
+/* Окно */
+.modal-content {
+  background: linear-gradient(145deg, rgba(35, 20, 50, 0.95), rgba(20, 10, 30, 0.95));
+  padding: 25px 30px;
+  border-radius: 12px;
+  max-width: 450px;
+  text-align: center;
+  border: 1px solid rgba(180, 140, 255, 0.4);
+  box-shadow: 0 0 25px rgba(150, 100, 255, 0.5);
+  color: #d6c9f0;
+  font-family: "Georgia", serif;
+  animation: scaleIn 0.25s ease;
+}
+
+/* Ссылки в модалке */
+.modal-content a {
+  color: #cba6ff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: var(--fs-5);
+}
+.modal-content a:hover {
+  text-shadow: 0 0 8px #cba6ff;
+}
+
+/* Кнопка */
+.modal-content button {
+  margin-top: 20px;
+  background: linear-gradient(145deg, #6a4bcf, #4b2e91);
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.modal-content button:hover {
+  background: linear-gradient(145deg, #8d6aff, #5c39b8);
+  box-shadow: 0 0 10px rgba(140, 100, 255, 0.7);
+}
+
+/* Анимации */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes scaleIn {
+  from { transform: scale(0.85); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}

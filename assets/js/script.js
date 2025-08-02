@@ -95,3 +95,14 @@ document.querySelectorAll('.accordion-button').forEach(button => {
         button.classList.toggle('active');
     });
 });
+
+
+// MODAL WINDOW
+function showNotice(e) {
+  e.preventDefault(); // отменяем переход
+  document.getElementById('notice-modal').style.display = 'flex';
+}
+
+function closeNotice(e) {
+  document.getElementById('notice-modal').style.display = 'none';
+}
