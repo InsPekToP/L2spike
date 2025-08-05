@@ -1813,6 +1813,19 @@ h1,h2,h3 {
     margin: 1rem 0;
 }
 
+.accordion-description .icons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 15px;
+}
+
+.accordion-description .icons img {
+    width:var(--fs-3);
+    height: var(--fs-3);
+    flex-shrink: 0;
+}
+
 .accordion-description p strong{
     color: var(--marigold);
 }
