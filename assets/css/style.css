@@ -1274,6 +1274,22 @@ h1,h2,h3 {
     .footer-wrapper {
         grid-column: 1 / 3;
     }
+
+    /* ABOUT */
+
+    .accordion-content .accordion-description .icons {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        gap: 10px;
+        margin: 15px;
+    }
+
+    .accordion-content .accordion-description .icons img {
+        width:var(--fs-3);
+        height: var(--fs-3);
+        flex-shrink: 0;
+    }
 }
 
 
@@ -1815,7 +1831,8 @@ h1,h2,h3 {
 
 .accordion-description .icons {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     gap: 10px;
     margin: 15px;
 }
