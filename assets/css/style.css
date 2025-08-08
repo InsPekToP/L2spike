@@ -1847,6 +1847,13 @@ h1,h2,h3 {
     color: var(--marigold);
 }
 
+.title-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+
 .accordion-description p em {
     color: var(--marigold_75);
 }
