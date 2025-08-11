@@ -1934,23 +1934,6 @@ h1,h2,h3 {
 
 /* Модальное окно */
 
-/* #notice-modal {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.5);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-.modal-content {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 400px;
-  text-align: center;
-} */
-
 /* Фон */
 #notice-modal {
   position: fixed;
@@ -2014,4 +1997,12 @@ h1,h2,h3 {
 @keyframes scaleIn {
   from { transform: scale(0.85); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
+}
+
+/* АНОНСЕРЫ */
+
+.anons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
