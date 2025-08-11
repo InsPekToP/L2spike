@@ -106,3 +106,5 @@ function showNotice(e) {
 function closeNotice(e) {
   document.getElementById('notice-modal').style.display = 'none';
 }
+
+// onclick="showNotice(event)" - добавить к ссылкам,если не действительны
