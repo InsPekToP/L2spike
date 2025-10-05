@@ -331,6 +331,12 @@ h1,h2,h3 {
     align-items: center;
 }
 
+.logo-img {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
 .logo {
     color: var(--white);
     font-family: var(--ff-montserrat);
@@ -2006,3 +2012,4 @@ h1,h2,h3 {
     flex-direction: row;
     gap: 10px;
 }
+
