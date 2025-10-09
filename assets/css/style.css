@@ -2016,3 +2016,43 @@ h1,h2,h3 {
     align-items: center;
 }
 
+/* CSS для L2foryou */
+.footer-l2foryou {
+  width: 120px;       /* аналогично старому width="120" */
+  height: auto;       /* масштабируется автоматически */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.footer-l2foryou #bg {
+  fill: #f59e0b; /* заменяет Tailwind fill-amber-600 */
+  transition: fill 0.3s;
+}
+
+.footer-l2foryou #l2 {
+  fill: #f5f5f5; /* заменяет fill-neutral-100 */
+  transition: fill 0.3s;
+}
+
+.footer-l2foryou #text {
+  fill: #111111; /* заменяет fill-neutral-900 */
+  transition: fill 0.3s;
+}
+
+/* Если у тебя есть тёмная тема — можно добавить: */
+body.dark .footer-l2foryou #bg {
+  fill: #fbbf24; /* заменяет dark:fill-amber-400 */
+}
+
+body.dark .footer-l2foryou #l2 {
+  fill: #111111; /* заменяет dark:fill-neutral-900 */
+}
+
+body.dark .footer-l2foryou #text {
+  fill: #f5f5f5; /* заменяет dark:fill-neutral-100 */
+}
+
+/* Ховер-эффект */
+.footer-l2foryou:hover #bg {
+  fill: #d97706;
+}
