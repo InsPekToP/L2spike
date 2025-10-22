@@ -297,7 +297,8 @@ h1,h2,h3 {
 .header-top,
 .download-btn,
 .header-bottom::before,
-.navbar-link::before {display: none;}
+.navbar-link::before,
+.social-fixed {display: none;}
 
 .header {
     position: relative;
@@ -342,6 +343,24 @@ h1,h2,h3 {
     font-family: var(--ff-montserrat);
     font-size: 3rem;
     font-weight: var(--fw-800);
+}
+
+/* .header .mobile-social{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+} */
+
+
+.mobile-social {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--jet); */
+    color: var(--marigold);
+    font-size: var(--fs-9);
+    padding: 8px 10px;
 }
 
 .header-actions {
@@ -1492,6 +1511,41 @@ h1,h2,h3 {
         padding: 8px 10px;
     }
 
+    .social-fixed {
+        position: fixed;
+        top: 50%;
+        left: 1rem;
+        transform: translate(-150%, -50%);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.6s ease, opacity 0.6s ease, visibility 0.6s ease;
+    }
+
+    .social-fixed.active {
+        transform: translate(0, -50%);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .social-fixed .social-link {
+        font-size: 24px;
+        /* color: #ccc; */
+        transition: color 0.3s, transform 0.3s;
+    }
+
+    .social-fixed .social-link:hover {
+        color: #9b59b6; /* фиолетовый в стиле L2Spike */
+        transform: scale(1.1);
+    }
+
+    .social-list.mobile-social {
+        display: none;
+    }
+
     .header-bottom {
         outline: 1px solid hsla(0, 0%, 0%, 0.2);
     }
@@ -1569,6 +1623,10 @@ h1,h2,h3 {
         align-items: center;
         gap: 50px;
     }
+
+    .hero .container.no-grid {
+        grid-template-columns: unset; /* или initial / none */
+}
 
     .btn {
         margin-inline: 0;
@@ -1671,6 +1729,10 @@ h1,h2,h3 {
     .hero .container {
         grid-template-columns: 1fr 0.9fr;
     }
+
+    .hero .container.no-grid {
+        grid-template-columns: unset; /* или initial / none */
+}
 
 
     /* BRAND */

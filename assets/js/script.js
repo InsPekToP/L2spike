@@ -38,14 +38,17 @@ for (let i = 0; i<searchToglers.length; i++){
 
 const header = document.querySelector("[data-header]");
 const backTopBtn = document.querySelector("[data-back-top-btn]");
+const socialBlock = document.querySelector("[data-social]");
 
 window.addEventListener("scroll", function() {
     if (window.scrollY >= 400){
         header.classList.add("active");
         backTopBtn.classList.add("active");
+        socialBlock.classList.add("active");
     }else{
         header.classList.remove("active");
         backTopBtn.classList.remove("active");
+        socialBlock.classList.remove("active");
     }
 });
 
