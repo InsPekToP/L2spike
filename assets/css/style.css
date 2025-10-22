@@ -345,19 +345,13 @@ h1,h2,h3 {
     font-weight: var(--fw-800);
 }
 
-/* .header .mobile-social{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-} */
-
 
 .mobile-social {
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 2rem;
     justify-content: center;
     align-items: center;
-    /* background-color: var(--jet); */
     color: var(--marigold);
     font-size: var(--fs-9);
     padding: 8px 10px;
