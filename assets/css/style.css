@@ -349,11 +349,11 @@ h1,h2,h3 {
 .mobile-social {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: var(--fs-9);
     justify-content: center;
     align-items: center;
     color: var(--marigold);
-    font-size: var(--fs-9);
+    font-size: var(--fs-5);
     padding: 8px 10px;
 }
 
