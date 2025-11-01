@@ -111,3 +111,20 @@ function closeNotice(e) {
 }
 
 // onclick="showNotice(event)" - добавить к ссылкам,если не действительны
+
+
+// LANGUAGE SWITCHER
+document.addEventListener('DOMContentLoaded', () => {
+  const langBtn = document.getElementById('lang-btn');
+  const langMenu = document.getElementById('lang-menu');
+
+  langBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    langMenu.classList.toggle('show');
+  });
+
+  // Закрыть меню при клике вне
+  document.addEventListener('click', () => {
+    langMenu.classList.remove('show');
+  });
+});

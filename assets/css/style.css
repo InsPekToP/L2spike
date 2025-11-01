@@ -295,7 +295,7 @@ h1,h2,h3 {
 
 /* HEADER */
 .header-top,
-.download-btn,
+.language-btn,
 .header-bottom::before,
 .navbar-link::before,
 .social-fixed {display: none;}
@@ -362,6 +362,72 @@ h1,h2,h3 {
     align-items: center;
     gap: 20px;
 }
+
+    .language-btn {
+        display: block;
+        position: relative;
+        color: var(--white);
+        font-size: 30px;
+    }
+
+    /* Контейнер */
+    .lang-dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Выпадающее меню */
+    .lang-menu {
+        display: none;
+        position: absolute;
+        top: 45px; /* немного ниже кнопки */
+        right: 0;
+        background-color: #1c1c1c;
+        border-radius: 6px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        z-index: 100;
+        min-width: 150px;
+    }
+
+    /* Элементы меню */
+    .lang-option {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 14px;
+        color: var(--white);
+        text-decoration: none;
+        transition: background 0.2s ease;
+    }
+
+    .lang-option:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Флаги */
+    .flag-icon {
+        width: 24px;
+        height: 16px;
+        border-radius: 3px;
+    }
+
+    /* Показываем меню при активации */
+    .lang-menu.show {
+        display: block;
+    }
+
+    .cart-badge {
+        position: absolute;
+        top: -6px;
+        right: -10px;
+        background-color: var(--marigold);
+        color: var(--eerie-black-1);
+        font-size: var(--fs-11);
+        border-radius: 20px;
+        padding: 3px 5px;
+        line-height: 1;
+        font-weight: var(--fw-800);
+    }
 
 .person-btn {
     color: var(--marigold);
@@ -1236,25 +1302,7 @@ h1,h2,h3 {
         gap: 40px;
     }
 
-    .download-btn {
-        display: block;
-        position: relative;
-        color: var(--white);
-        font-size: 30px;
-    }
 
-    .cart-badge {
-        position: absolute;
-        top: -6px;
-        right: -10px;
-        background-color: var(--marigold);
-        color: var(--eerie-black-1);
-        font-size: var(--fs-11);
-        border-radius: 20px;
-        padding: 3px 5px;
-        line-height: 1;
-        font-weight: var(--fw-800);
-    }
 
 
     /* SEARCH BOX */
