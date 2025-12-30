@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const launchYear = 2025;
     const launchMonth = 11; // декабрь = 11
     const launchDay = 31;
-    const launchHour = 20;  // MSK
+    const launchHour = 20;  // Киевское время UTC+2, Москва UTC+3
     const launchMinute = 0;
     const launchSecond = 0;
 
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function getMoscowTime() {
         const now = new Date();
         const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
-        const moscowOffset = 3 * 60 * 60 * 1000; // +3 часа
+        const moscowOffset = 2 * 60 * 60 * 1000; // +2 часа
         return new Date(utc + moscowOffset);
     }
 
