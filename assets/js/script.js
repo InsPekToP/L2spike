@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const launchYear = 2025;
     const launchMonth = 11; // декабрь = 11
     const launchDay = 31;
-    const launchHour = 12;  // MSK
+    const launchHour = 20;  // MSK
     const launchMinute = 0;
     const launchSecond = 0;
 
