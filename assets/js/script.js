@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Целевая дата в MSK
-    const launchDate = new Date(Date.UTC(launchYear, launchMonth, launchDay, launchHour - 3, launchMinute, launchSecond));
+    const launchDate = new Date(Date.UTC(launchYear, launchMonth, launchDay, launchHour - 1, launchMinute, launchSecond));
 
     // Склонения для русского языка
     function declOfDays(n) {
