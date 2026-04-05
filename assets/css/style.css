@@ -1246,6 +1246,22 @@ h1,h2,h3 {
     text-align: center;
 }
 
+.footer-bottom-img {
+    display: block;
+}
+
+.footer-bottom {
+    text-align: left;
+}
+
+.footer-bottom .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+}
+
 .copiringht {
     font-size: var(--fs-9);
     font-weight: var(--fw-500);
@@ -1437,21 +1453,6 @@ h1,h2,h3 {
     .footer-brand,
     .footer-wrapper {
         grid-column: auto;
-    }
-
-    .footer-bottom-img {
-        display: block;
-    }
-
-    .footer-bottom {
-        text-align: left;
-    }
-
-    .footer-bottom .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap:20px;
     }
 
 
