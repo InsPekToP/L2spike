@@ -134,10 +134,10 @@ document.addEventListener('DOMContentLoaded', () => {
 // Таймер обратного отсчёта
 // Дата открытия: 31 декабря 2025, 20:00 по киевскому времени (UTC+2 в декабре)
 
-const launchYear = 2025;
-const launchMonth = 11; // декабрь (месяцы в JS: 0-11)
-const launchDay = 31;
-const launchHourUTC = 18;   // 20:00 Kyiv = 18:00 UTC (поскольку +2)
+const launchYear = 2026;
+const launchMonth = 3; // 11й-декабрь(месяцы в JS: 0-11)
+const launchDay = 11;
+const launchHourUTC = 18;   // 20:00 Kyiv = 18:00 UTC (Писать 18!!! поскольку +2)
 const launchMinute = 0;
 const launchSecond = 0;
 
@@ -146,10 +146,10 @@ function getCurrentUTCTime() {
     return new Date(); // Просто new Date() — это текущее время, таймстамп в UTC
 }
 
-// Целевая дата в UTC: 31 декабря 2025, 18:00 UTC (что = 20:00 Kyiv)
+// Целевая дата в UTC:
 const launchDate = new Date(Date.UTC(launchYear, launchMonth, launchDay, launchHourUTC, launchMinute, launchSecond));
 
-// Функции склонения (без изменений)
+// Функции склонения RU
 function declOfDays(n) {
     if (n % 10 === 1 && n % 100 !== 11) return 'ДЕНЬ';
     if ([2, 3, 4].includes(n % 10) && ![12, 13, 14].includes(n % 100)) return 'ДНЯ';
@@ -171,6 +171,28 @@ function declOfSeconds(n) {
     return 'СЕКУНД';
 }
 
+// Функции склонения UA
+function declOfDaysUa(n) {
+    if (n % 10 === 1 && n % 100 !== 11) return 'ДЕНЬ';
+    if ([2, 3, 4].includes(n % 10) && ![12, 13, 14].includes(n % 100)) return 'ДНІ';
+    return 'ДНІВ';
+}
+function declOfHoursUa(n) {
+    if (n % 10 === 1 && n % 100 !== 11) return 'ГОДИНА';
+    if ([2, 3, 4].includes(n % 10) && ![12, 13, 14].includes(n % 100)) return 'ГОДИНИ';
+    return 'ГОДИН';
+}
+function declOfMinutesUa(n) {
+    if (n % 10 === 1 && n % 100 !== 11) return 'ХВИЛИНА';
+    if ([2, 3, 4].includes(n % 10) && ![12, 13, 14].includes(n % 100)) return 'ХВИЛИНИ';
+    return 'ХВИЛИН';
+}
+function declOfSecondsUa(n) {
+    if (n % 10 === 1 && n % 100 !== 11) return 'СЕКУНДА';
+    if ([2, 3, 4].includes(n % 10) && ![12, 13, 14].includes(n % 100)) return 'СЕКУНДИ';
+    return 'СЕКУНД';
+}
+
 function updateCountdown() {
     const nowUTC = getCurrentUTCTime();
     const distance = launchDate.getTime() - nowUTC.getTime();
@@ -182,6 +204,9 @@ function updateCountdown() {
         }
         if (document.getElementById('countdown-ru')) {
             document.getElementById('countdown-ru').innerHTML = 'СЕРВЕР ОТКРЫТ!';
+        }
+        if (document.getElementById('countdown-ua')) {
+            document.getElementById('countdown-ua').innerHTML = 'СЕРВЕР ВІДКРИТО!';
         }
         return;
     }
@@ -197,11 +222,17 @@ function updateCountdown() {
     // Русская версия
     const timeStringRu = `${days} ${declOfDays(days)} / ${hours.toString().padStart(2, '0')} ${declOfHours(hours)} / ${minutes.toString().padStart(2, '0')} ${declOfMinutes(minutes)} / ${seconds.toString().padStart(2, '0')} ${declOfSeconds(seconds)}`;
 
+    // Украинская версия
+    const timeStringUa = `${days} ${declOfDaysUa(days)} / ${hours.toString().padStart(2, '0')} ${declOfHoursUa(hours)} / ${minutes.toString().padStart(2, '0')} ${declOfMinutesUa(minutes)} / ${seconds.toString().padStart(2, '0')} ${declOfSecondsUa(seconds)}`;
+
     if (document.getElementById('countdown-en')) {
         document.getElementById('countdown-en').innerHTML = timeStringEn;
     }
     if (document.getElementById('countdown-ru')) {
         document.getElementById('countdown-ru').innerHTML = timeStringRu;
+    }
+    if (document.getElementById('countdown-ua')) {
+        document.getElementById('countdown-ua').innerHTML = timeStringUa;
     }
 }
 
