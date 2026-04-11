@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const launchYear = 2026;
 const launchMonth = 3; // 11й-декабрь(месяцы в JS: 0-11)
 const launchDay = 11;
-const launchHourUTC = 18;   // 20:00 Kyiv = 18:00 UTC (Писать 18!!! поскольку +2)
+const launchHourUTC = 17;   // 20:00 Kyiv = 18:00 UTC (Писать 18!!! поскольку +2)
 const launchMinute = 0;
 const launchSecond = 0;
 
