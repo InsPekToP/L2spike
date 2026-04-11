@@ -132,12 +132,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // Таймер обратного отсчёта
-// Дата открытия: 31 декабря 2025, 20:00 по киевскому времени (UTC+2 в декабре)
 
 const launchYear = 2026;
 const launchMonth = 3; // 11й-декабрь(месяцы в JS: 0-11)
 const launchDay = 11;
-const launchHourUTC = 17;   // 20:00 Kyiv = 18:00 UTC (Писать 18!!! поскольку +2)
+const launchHourUTC = 17;   // 20:00 Kyiv = 18:00 UTC(Зимой) (Писать 18(Зимой)-17(Летом) поскольку +2)
 const launchMinute = 0;
 const launchSecond = 0;
 
